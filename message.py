@@ -82,7 +82,7 @@ def Carousel_Template():
             columns=[
                 CarouselColumn(
                     title='步驟1《確認房東身分》',
-                    text = '請房東出示『身分證明文件』、『房屋所有權狀』，確保房屋為房東所屬。若對方為二房東，查看是否取得『轉租同意證明』',
+                    text = '請房東出示『身分證明文件』、『房屋所有權狀』，確保房屋為房東所屬。若對方為二房東，查看是否取得『轉租同意證明』',  #不得超過60字
                     actions=[
                         URITemplateAction(
                             label='辨別針假房東',
