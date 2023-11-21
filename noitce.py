@@ -21,17 +21,3 @@ def schedule_reminder():
 @app.before_first_request
 def activate_job():
     schedule_reminder()
-
-# LINE Bot 的 Webhook 處理
-@app.route("/callback", methods=['POST'])
-def callback():
-    signature = request.headers['X-Line-Signature']
-    body = request.get_data(as_text=True)
-    try:
-        handler.handle(body, signature)
-    except InvalidSignatureError:
-        abort(400)
-    return 'OK'
-
-if __name__ == "__main__":
-    app.run()
