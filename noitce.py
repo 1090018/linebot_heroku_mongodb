@@ -1,6 +1,6 @@
 from linebot.models import *
 # LINE Bot 的訊息處理
-@handler.add(MessageEvent, message=TextMessage)
+
 def handle_message(event):
     message_text = event.message.text.lower()
     if '繳錢' in message_text:  # 當收到包含「繳錢」的訊息時
