@@ -1,17 +1,5 @@
 import pymongo
 
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-uri = "mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.mongodb.net/?retryWrites=true&w=majority"
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-# Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-except Exception as e:
-    print(e)
-
 # 要獲得mongodb網址，請至mongodb網站申請帳號進行資料庫建立，網址　https://www.mongodb.com/
 # 獲取的網址方法之範例如圖： https://i.imgur.com/HLCk99r.png
 client = pymongo.MongoClient("mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.mongodb.net/?retryWrites=true&w=majority")
