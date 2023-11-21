@@ -16,8 +16,3 @@ def remind_to_pay():
 # 設置每天定時檢查是否要提醒
 def schedule_reminder():
     schedule.every().day.at("08:00").do(remind_to_pay)  # 每天早上8點檢查
-
-# 在Flask啟動時開始執行定時任務
-@app.before_first_request
-def activate_job():
-    schedule_reminder()
