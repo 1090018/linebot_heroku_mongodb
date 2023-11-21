@@ -103,7 +103,7 @@ def Carousel_Template():
             columns=[
                 CarouselColumn(
                     title='步驟1《確認房東身分》',
-                    text = '請房東出示身分證明文件、房屋所有權狀，確保房屋為房東所屬。若對方為二房東，查看是否取得『轉租同意證明』',
+                    text = '請房東出示『身分證明文件』、『房屋所有權狀』，確保房屋為房東所屬。若對方為二房東，查看是否取得『轉租同意證明』',
                     actions=[
                         URITemplateAction(
                             label='辨別針假房東',
@@ -117,29 +117,29 @@ def Carousel_Template():
                 ),
                 CarouselColumn(
                     title='步驟2《確認合約資訊》',
-                    text='確認內容。住宅租賃契約應約定及不得約定事項，規定特定條款不得加註於租約，建議和內政部租約範本比對，較能保障自身權益。',
+                    text='《住宅租賃契約應約定及不得約定事項》規定特定條款不得加註於租約，建議和內政部租約範本比對，較能保障自身權益。',
                     actions=[
                         URITemplateAction(
-                            label='點擊看租賃契約須知',
+                            label='租賃契約須知',
                             uri='https://www.591.com.tw/help-book13.html'
                        ),
                         URITemplateAction(
-                            label='《住宅租賃契約應約定及不得約定事項》',
+                            label='應約定及不得約定事項',
                             uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
                         ),
                     ]
                 ),
                 CarouselColumn(
                     title='步驟3《完成簽約流程》',
-                    text='通常租客會需要支付兩個月的押金、第一個月的租金，所以要先準備好三個月租金的費用。簽字蓋章完成後，雙方各自保留一份租約',
+                    text='通常租客需支付兩個月的押金、首月的租金，因此要先準備好三個月的租金。簽字蓋章完成後，雙方要各自保留一份租約',
                     actions=[
                         URITemplateAction(
-                            label='《住宅租賃契約應約定及不得約定事項》',
-                            uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
+                            label='訂金、押金、租金',
+                            uri='https://sa.dila.edu.tw/?page_id=8604'
                         ),
-                        MessageTemplateAction(
-                            label="查詢其他功能",
-                            text="查詢其他功能"
+                        URITemplateAction(
+                            label="安全提醒",
+                            uri="https://www.591.com.tw/help-book18.html"
                         )
                     ]
                 )
