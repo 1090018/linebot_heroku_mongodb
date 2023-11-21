@@ -1,12 +1,3 @@
-from flask import Flask, request, abort
-from linebot import LineBotApi, WebhookHandler
-from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
-import schedule
-import time
-import datetime
-
-app = Flask(__name__)
 
 # LINE Bot 的訊息處理
 @handler.add(MessageEvent, message=TextMessage)
