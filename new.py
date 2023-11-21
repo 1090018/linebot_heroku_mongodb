@@ -3,35 +3,42 @@ from linebot.models import *
 
 def test():
     message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
+        alt_text='常見問題一覽',
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/uKYgfVs.jpg",
-                    action=URITemplateAction(
-                        label="新鮮水果",
-                        uri="http://img.juimg.com/tuku/yulantu/110709/222-110F91G31375.jpg"
+                    image_url="https://storage.cloud.google.com/pig_house/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E5%9C%96%E7%89%87/1.png",
+                    action=MessageTemplateAction(
+                        label="簽約流程一覽",
+                        text="簽約流程一覽"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QOcAvjt.jpg",
-                    action=URITemplateAction(
-                        label="新鮮蔬菜",
-                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
+                    image_url="https://storage.cloud.google.com/pig_house/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E5%9C%96%E7%89%87/2.png",
+                    action=MessageTemplateAction(
+                        label="常見租屋陷阱",
+                        text="常見租屋陷阱"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/Np7eFyj.jpg",
-                    action=URITemplateAction(
-                        label="可愛狗狗",
-                        uri="http://imgm.cnmo-img.com.cn/appimg/screenpic/big/674/673928.JPG"
+                    image_url="https://storage.cloud.google.com/pig_house/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E5%9C%96%E7%89%87/4.png",
+                    action=MessageTemplateAction(
+                        label="看房注意事項",
+                        text="看房注意事項"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QRIa5Dz.jpg",
-                    action=URITemplateAction(
-                        label="可愛貓咪",
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
+                    image_url="https://storage.cloud.google.com/pig_house/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E5%9C%96%E7%89%87/3.png",
+                    action=MessageTemplateAction(
+                        label="簽約注意事項",
+                        text="簽約注意事項"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url="https://storage.cloud.google.com/pig_house/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E5%9C%96%E7%89%87/5.png",
+                    action=MessageTemplateAction(
+                        label="退租注意事項",
+                        text="退租注意事項"      
                     )
                 )
             ]
