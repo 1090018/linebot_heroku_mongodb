@@ -60,8 +60,8 @@ def buttons_message():
                     uri="https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E7%AF%84%E6%9C%AC%20(1).pdf"
                 ),
                 MessageTemplateAction(
-                    label="將合約存在此",
-                    text="將合約存在此"
+                    label="上傳合約",
+                    text="上傳合約"
                 ),
                 MessageTemplateAction(
                     label="查看合約",
