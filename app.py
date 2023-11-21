@@ -51,13 +51,13 @@ def handle_message(event):
     if '最新合作廠商' in msg:
         message = imagemap_message()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '最新活動訊息' in msg:
+    elif '合約專區' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '註冊會員' in msg:
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '旋轉木馬' in msg:
+    elif '簽約流程一覽' in msg:
         message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif '租房須知' in msg:
