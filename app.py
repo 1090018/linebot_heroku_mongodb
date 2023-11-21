@@ -48,11 +48,11 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '最新合作廠商' in msg:
-        message = imagemap_message()
+    if '法律諮詢' in msg:
+        message = buttons_message_law()
         line_bot_api.reply_message(event.reply_token, message)
     elif '合約專區' in msg:
-        message = buttons_message()
+        message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
     elif '註冊會員' in msg:
         message = Confirm_Template()
