@@ -19,6 +19,9 @@ from noitce import *
 
 #======python的函數庫==========
 import  os
+import schedule
+import time
+import datetime
 #======python的函數庫==========
 
 app = Flask(__name__)
