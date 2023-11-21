@@ -135,7 +135,7 @@ def Carousel_Template():
                     actions=[
                         URITemplateAction(
                             label='訂金、押金、租金',
-                            uri='https://sa.dila.edu.tw/?page_id=8604'
+                            uri='https://news.591.com.tw/news/2098'
                         ),
                         URITemplateAction(
                             label="安全提醒",
