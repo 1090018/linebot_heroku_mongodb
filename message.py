@@ -98,65 +98,41 @@ def Confirm_Template():
 
 def Carousel_Template():
     message = TemplateSendMessage(
-        alt_text='一則旋轉木馬按鈕訊息',
+        alt_text='簽約流程旋轉木馬按鈕訊息',
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
-                    title='這是第一塊模板',
-                    text='一個模板可以有三個按鈕',
+                    title='步驟1《確認房東身分》',
+                    text='請房東出示身分證明文件、房屋所有權狀，確保房屋為房東所屬。若對方為二房東，則請對方出示與原屋主所訂立之契約書，查看是否取得『轉租同意證明』',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='將這個訊息偷偷回傳給機器人'
-                        ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是1'
+                        URITemplateAction(
+                            label='辨別針假房東',
+                            uri='https://www.591.com.tw/help-book20.html'
                         ),
                         URITemplateAction(
-                            label='進入1的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png'
-                        )
+                            label='查詢房東風評',
+                            uri='https://rent-exp.blogspot.com/?fbclid=IwAR3x4DmyMQNlKTD_pHr5VU-UdRGb3WHga1IyFNrkFSfneuJj4NpJEDLFHZQ'
+                        ),
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuo7n2_HNSFuT3T7Z9PUZmn1SDM6G6-iXfRC3FxdGTj7X1Wr0RzA',
-                    title='這是第二塊模板',
-                    text='副標題可以自己改',
+                    title='步驟2《確認合約資訊》',
+                    text='確認合約內容是否正確。《住宅租賃契約應約定及不得約定事項》已規定特定條款是不得加註於租約內！如果房東使用的是自己的租約，建議和內政部提供的租約範本進行比對，比較能保障自己的承租權益。',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=2'
-                        ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是2'
-                        ),
                         URITemplateAction(
-                            label='進入2的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Number_2_in_light_blue_rounded_square.svg/200px-Number_2_in_light_blue_rounded_square.svg.png'
-                        )
+                            label='點擊看租賃契約須知',
+                            uri='https://www.591.com.tw/help-book13.html'
+                       ),
+                        URITemplateAction(
+                            label='《住宅租賃契約應約定及不得約定事項》',
+                            uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
+                        ),
                     ]
                 ),
                 CarouselColumn(
                     thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png',
-                    title='這是第三個模塊',
-                    text='最多可以放十個',
-                    actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=3'
-                        ),
-                        MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是3'
-                        ),
-                        URITemplateAction(
-                            label='uri2',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png'
-                        )
-                    ]
+                    title='步驟3《完成簽約流程》',
+                    text='若租約內容確認完畢，即可開始簽約。通常租客會需要支付兩個月租金的押金、第一個月的租金（俗稱兩押一租），所以要先準備好三個月租金的費用。簽字蓋章完成後，雙方各自保留一份租約，不必繳回給房東。',
                 )
             ]
         )
