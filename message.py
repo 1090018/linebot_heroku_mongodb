@@ -103,7 +103,10 @@ def Carousel_Template():
             columns=[
                 CarouselColumn(
                     title='步驟1《確認房東身分》',
-                    text='請房東出示身分證明文件、房屋所有權狀，確保房屋為房東所屬。若對方為二房東，則請對方出示與原屋主所訂立之契約書，查看是否取得『轉租同意證明』',
+                    text = ('請房東出示身分證明文件、房屋所有權狀，\n'
+                            '確保房屋為房東所屬。若對方為二房東，\n'
+                            '則請對方出示與原屋主所訂立之契約書，\n'
+                            '查看是否取得『轉租同意證明』'),
                     actions=[
                         URITemplateAction(
                             label='辨別針假房東',
@@ -117,7 +120,11 @@ def Carousel_Template():
                 ),
                 CarouselColumn(
                     title='步驟2《確認合約資訊》',
-                    text='確認合約內容是否正確。《住宅租賃契約應約定及不得約定事項》已規定特定條款是不得加註於租約內！如果房東使用的是自己的租約，建議和內政部提供的租約範本進行比對，比較能保障自己的承租權益。',
+                    text=('確認合約內容是否正確。\n'
+                        《住宅租賃契約應約定及不得約定事項》\n'
+                        已規定特定條款是不得加註於租約內！\n'
+                        建議和內政部提供的租約範本進行比對，\n'
+                        比較能保障自己的承租權益。'),
                     actions=[
                         URITemplateAction(
                             label='點擊看租賃契約須知',
@@ -131,7 +138,12 @@ def Carousel_Template():
                 ),
                 CarouselColumn(
                     title='步驟3《完成簽約流程》',
-                    text='若租約內容確認完畢，即可開始簽約。通常租客會需要支付兩個月租金的押金、第一個月的租金（俗稱兩押一租），所以要先準備好三個月租金的費用。簽字蓋章完成後，雙方各自保留一份租約，不必繳回給房東。',
+                    text=('若租約內容確認完畢，即可開始簽約。\n
+                            通常租客會需要支付兩個月租金的押金、\n
+                            第一個月的租金（俗稱兩押一租），\n
+                            所以要先準備好三個月租金的費用。\n
+                            簽字蓋章完成後，雙方各自保留一份租約\n
+                            ，不必繳回給房東。'),
                      URITemplateAction(
                             label='《住宅租賃契約應約定及不得約定事項》',
                             uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
@@ -141,44 +153,3 @@ def Carousel_Template():
         )
     )
     return message
-
-#TemplateSendMessage - ImageCarouselTemplate(圖片旋轉木馬)
-def image_carousel_message1():
-    message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
-        template=ImageCarouselTemplate(
-            columns=[
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/uKYgfVs.jpg",
-                    action=URITemplateAction(
-                        label="新鮮水果",
-                        uri="http://img.juimg.com/tuku/yulantu/110709/222-110F91G31375.jpg"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QOcAvjt.jpg",
-                    action=URITemplateAction(
-                        label="新鮮蔬菜",
-                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/Np7eFyj.jpg",
-                    action=URITemplateAction(
-                        label="可愛狗狗",
-                        uri="http://imgm.cnmo-img.com.cn/appimg/screenpic/big/674/673928.JPG"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QRIa5Dz.jpg",
-                    action=URITemplateAction(
-                        label="可愛貓咪",
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
-                    )
-                )
-            ]
-        )
-    )
-    return message
-
-#關於LINEBOT聊天內容範例
