@@ -1,54 +1,33 @@
 #這些是LINE官方開放的套件組合透過import來套用這個檔案上
 from linebot.models import *
 
-#ImagemapSendMessage(組圖訊息)
-def imagemap_message():
-    message = ImagemapSendMessage(
-        base_url="https://i.imgur.com/BfTFVDN.jpg",
-        alt_text='最新的合作廠商有誰呢？',
-        base_size=BaseSize(height=2000, width=2000),
-        actions=[
-            URIImagemapAction(
-                #家樂福
-                link_uri="https://tw.shop.com/search/%E5%AE%B6%E6%A8%82%E7%A6%8F",
-                area=ImagemapArea(
-                    x=0, y=0, width=1000, height=1000
+#TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
+def buttons_message_law():
+    message = TemplateSendMessage(
+        alt_text='合約',
+        template=ButtonsTemplate(
+            title="請選擇您需要的合約服務",
+            text="以下是我們提供的服務：",
+            actions=[
+                URITemplateAction(
+                    label="合約範本",
+                    uri="https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E7%AF%84%E6%9C%AC%20(1).pdf"
+                ),
+                MessageTemplateAction(
+                    label="上傳合約",
+                    text="上傳合約"
+                ),
+                MessageTemplateAction(
+                    label="查看合約",
+                    text="查看合約"
                 )
-            ),
-            URIImagemapAction(
-                #生活市集
-                link_uri="https://tw.shop.com/search/%E7%94%9F%E6%B4%BB%E5%B8%82%E9%9B%86",
-                area=ImagemapArea(
-                    x=1000, y=0, width=1000, height=1000
-                )
-            ),
-            URIImagemapAction(
-                #阿瘦皮鞋
-                link_uri="https://tw.shop.com/search/%E9%98%BF%E7%98%A6%E7%9A%AE%E9%9E%8B",
-                area=ImagemapArea(
-                    x=0, y=1000, width=1000, height=1000
-                )
-            ),
-            URIImagemapAction(
-                #塔吉特千層蛋糕
-                link_uri="https://tw.shop.com/search/%E5%A1%94%E5%90%89%E7%89%B9",
-                area=ImagemapArea(
-                    x=1000, y=1000, width=1000, height=500
-                )
-            ),
-            URIImagemapAction(
-                #亞尼克生乳捲
-                link_uri="https://tw.shop.com/search/%E4%BA%9E%E5%B0%BC%E5%85%8B",
-                area=ImagemapArea(
-                    x=1000, y=1500, width=1000, height=500
-                )
-            )
-        ]
+            ]
+        )
     )
     return message
 
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
-def buttons_message():
+def buttons_message_contract():
     message = TemplateSendMessage(
         alt_text='合約',
         template=ButtonsTemplate(
