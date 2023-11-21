@@ -66,9 +66,6 @@ def handle_message(event):
     elif '功能列表' in msg:
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '繳費' in msg:
-        message = function_list()
-        line_bot_api.reply_message(event.reply_token, message)
 
     #======MongoDB操作範例======
 
