@@ -14,14 +14,10 @@ from message import *
 from new import *
 from Function import *
 from mongodb_function import *
-from noitce import *
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
 import  os
-import schedule
-import time
-import datetime
 #======python的函數庫==========
 
 app = Flask(__name__)
