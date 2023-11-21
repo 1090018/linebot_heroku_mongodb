@@ -132,6 +132,10 @@ def Carousel_Template():
                 CarouselColumn(
                     title='步驟3《完成簽約流程》',
                     text='若租約內容確認完畢，即可開始簽約。通常租客會需要支付兩個月租金的押金、第一個月的租金（俗稱兩押一租），所以要先準備好三個月租金的費用。簽字蓋章完成後，雙方各自保留一份租約，不必繳回給房東。',
+                     URITemplateAction(
+                            label='《住宅租賃契約應約定及不得約定事項》',
+                            uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
+                        ),
                 )
             ]
         )
