@@ -58,7 +58,10 @@ def handle_message(event):
         message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif '簽約流程一覽' in msg:
-        message = Carousel_Template()
+        message = Carousel_Template1()
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '常見租屋陷阱' in msg:
+        message = Carousel_Template2()
         line_bot_api.reply_message(event.reply_token, message)
     elif '租房須知' in msg:
         message = test()
