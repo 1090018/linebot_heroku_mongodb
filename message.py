@@ -133,7 +133,7 @@ def Carousel_Template2():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    title='陷阱1《租屋網刊登『照騙』》,
+                    title='陷阱1《租屋網刊登『照騙』》',
                     text = '房東或業者刻意利用修圖軟體製造屋內空間明亮、寬敞的錯覺。',  #不得超過60字
                     actions=[
                         MessageTemplateAction(
