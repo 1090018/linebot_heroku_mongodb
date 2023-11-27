@@ -189,7 +189,7 @@ def Carousel_Template2():
                         MessageTemplateAction(
                             label="👉正確處理方法",
                             text="破解陷阱6"
-                        ),
+                        )
                     ]
                 )
             ]
