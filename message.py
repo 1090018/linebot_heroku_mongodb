@@ -184,7 +184,7 @@ def Carousel_Template2():
                 ),
                 CarouselColumn(
                     title='陷阱6《有問題一概不負責》',
-                    text='房東有義務讓房子維持在可以使用的狀態，除有特別約定或特殊狀況，否則費用須由「出租人」負擔。',
+                    text='某些房東遇到房屋漏水、設備損壞時，會百般推託不願修繕，甚至在簽約時要求房客自負修繕責任。',
                     actions=[
                         MessageTemplateAction(
                             label="👉正確處理方法",
