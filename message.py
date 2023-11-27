@@ -137,7 +137,7 @@ def Carousel_Template2():
                     text = '房東或業者刻意利用修圖軟體製造屋內空間明亮、寬敞的錯覺。',  #不得超過60字
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱1",
                             text="破解陷阱1"
                         ),
                     ]
@@ -147,7 +147,7 @@ def Carousel_Template2():
                     text='在租屋網刊登假房源，誘騙租客上門，後謊稱不便看房，並以物件搶手為由，要求先行支付定金後便「人間蒸發」。',
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱2",
                             text="破解陷阱2"
                         ),
                     ]
@@ -157,7 +157,7 @@ def Carousel_Template2():
                     text='二房東在未經屋主同意下擅自修改格局並出租，若東窗事發，租客有可能被真正的房東要求搬離租屋處。',
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱3",
                             text="破解陷阱3"
                         ),
                     ]
@@ -167,7 +167,7 @@ def Carousel_Template2():
                     text='租屋押金明定不得超過二個月的租金總額。若房東巧立名目收取較高的金額，即為違法，應予以拒絕。',
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱4",
                             text="破解陷阱4"
                         ),
                     ]
@@ -177,7 +177,7 @@ def Carousel_Template2():
                     text='部分不肖房東會在網路以條件較好的A物件招攬租客，卻在帶看甚至是簽約後，藉故要求改租條件較差的B物件。',
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱5",
                             text="破解陷阱5"
                         ),
                     ]
@@ -187,7 +187,7 @@ def Carousel_Template2():
                     text='某些房東遇到房屋漏水、設備損壞時，會百般推託不願修繕，甚至在簽約時要求房客自負修繕責任。',
                     actions=[
                         MessageTemplateAction(
-                            label="👉正確處理方法",
+                            label="👉破解陷阱6",
                             text="破解陷阱6"
                         )
                     ]
