@@ -166,7 +166,6 @@ def Carousel_Template2():
                     title='陷阱4《要求高額訂金或押金》',
                     text='租屋押金明定不得超過二個月的租金總額。若房東巧立名目收取較高的金額，即為違法，應予以拒絕。',
                     actions=[
-                        actions=[
                         MessageTemplateAction(
                             label="👉正確處理方法",
                             text="破解陷阱4"
