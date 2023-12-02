@@ -1,7 +1,7 @@
 from linebot.models import *
 
 def flex_message():
-    message =FlexSendMessage(
+    FlexSendMessage(
     alt_text='hello',
     contents={
       "type": "bubble",
@@ -156,4 +156,3 @@ def flex_message():
       }
     }
 )
-return message
