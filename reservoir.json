@@ -3,6 +3,7 @@ from linebot.models import *
 def FlexSendMessage():
     message = FlexSendMessage(
     alt_text='部落格',  
+    template=Carousel(
     contents=[
       {
         "type": "bubble",
@@ -310,4 +311,5 @@ def FlexSendMessage():
         }
       }
     ]
-)
+))
+
