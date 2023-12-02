@@ -1,12 +1,10 @@
+
+import json
+from linebot.models import *
+from linebot import LineBotApi, WebhookHandler
+from linebot.exceptions import InvalidSignatureError
 from flask import Flask, request, abort
 
-from linebot import (
-    LineBotApi, WebhookHandler
-)
-from linebot.exceptions import (
-    InvalidSignatureError
-)
-from linebot.models import *
 
 
 #======這裡是呼叫的檔案內容=====
@@ -14,6 +12,7 @@ from message import *
 from new import *
 from Function import *
 from mongodb_function import *
+from reservoir import *
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
