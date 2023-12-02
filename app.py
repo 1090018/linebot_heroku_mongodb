@@ -67,8 +67,7 @@ def handle_message(event):
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
     elif '功能列表' in msg:
-        message = flex_message()
-        line_bot_api.reply_message(event.reply_token, message)
+        line_bot_api.reply_message(event.reply_token,flex_message())
 
     #======MongoDB操作範例======
 
