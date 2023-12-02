@@ -12,7 +12,6 @@ from message import *
 from new import *
 from Function import *
 from mongodb_function import *
-from reservoir import *
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
@@ -47,10 +46,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '水情' in msg:
-        message = FlexSendMessage()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '法律諮詢' in msg:
+    if '法律諮詢' in msg:
         message = buttons_message_law()
         line_bot_api.reply_message(event.reply_token, message)
     elif '合約專區' in msg:
