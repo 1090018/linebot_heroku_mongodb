@@ -1,5 +1,5 @@
 from linebot.models import *
-def FlexSendMessage(
+def FlexSendMessage():
     alt_text='部落格',  
     contents=[
       {
