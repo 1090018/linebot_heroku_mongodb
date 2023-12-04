@@ -66,12 +66,12 @@ def handle_message(event):
     elif '租房須知' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '水情' in msg:
+    elif '我要找房' in msg:
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage(
-                alt_text = '全台水庫資訊',
-                contents = json.load(open('flex.json', 'r', encoding='utf-8'))
+                alt_text = '房屋條件篩選',
+                contents = json.load(open('select.json', 'r', encoding='utf-8'))
             )
         )
     #======MongoDB操作範例======
