@@ -65,7 +65,7 @@ def handle_message(event):
     elif '租房須知' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
-    if '水情' in msg:
+    elif '水情' in msg:
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage(
