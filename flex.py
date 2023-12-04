@@ -1,122 +1,41 @@
-from linebot.models import *
-
-def flex_message():
-    FlexSendMessage(
-    alt_text='hello',
-    contents={
+{
+  "type": "carousel",
+  "contents": [
+    {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+        "url": "https://img2.591.com.tw/house/2023/05/03/168312560606740158.jpg!750x588.water2.jpg",
         "size": "full",
         "aspectRatio": "20:13",
-        "aspectMode": "cover",
-        "action": {
-          "type": "uri",
-          "uri": "http://linecorp.com/"
-        }
+        "aspectMode": "cover"
       },
       "body": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "sm",
         "contents": [
           {
             "type": "text",
-            "text": "Brown Cafe",
+            "text": "套房出租(交通飲食方便)",
             "weight": "bold",
-            "size": "xl"
+            "size": "lg",
+            "wrap": true,
+            "contents": []
           },
           {
-            "type": "box",
-            "layout": "baseline",
-            "margin": "md",
-            "contents": [
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-              },
-              {
-                "type": "text",
-                "text": "4.0",
-                "size": "sm",
-                "color": "#999999",
-                "margin": "md",
-                "flex": 0
-              }
-            ]
+            "type": "text",
+            "text": "6坪2F/4F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
           },
           {
-            "type": "box",
-            "layout": "vertical",
-            "margin": "lg",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "baseline",
-                "spacing": "sm",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Place",
-                    "color": "#aaaaaa",
-                    "size": "sm",
-                    "flex": 1
-                  },
-                  {
-                    "type": "text",
-                    "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-                    "wrap": True,
-                    "color": "#666666",
-                    "size": "sm",
-                    "flex": 5
-                  }
-                ]
-              },
-              {
-                "type": "box",
-                "layout": "baseline",
-                "spacing": "sm",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Time",
-                    "color": "#aaaaaa",
-                    "size": "sm",
-                    "flex": 1
-                  },
-                  {
-                    "type": "text",
-                    "text": "10:00 - 23:00",
-                    "wrap": True,
-                    "color": "#666666",
-                    "size": "sm",
-                    "flex": 5
-                  }
-                ]
-              }
-            ]
+            "type": "text",
+            "text": "6,500元/月 ",
+            "contents": []
           }
         ]
       },
@@ -127,32 +46,257 @@ def flex_message():
         "contents": [
           {
             "type": "button",
-            "style": "link",
-            "height": "sm",
             "action": {
-              "type": "uri",
-              "label": "CALL",
-              "uri": "https://linecorp.com"
-            }
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
           },
           {
             "type": "button",
-            "style": "link",
-            "height": "sm",
             "action": {
               "type": "uri",
-              "label": "WEBSITE",
-              "uri": "https://linecorp.com"
-            }
+              "label": "詳細資訊",
+              "uri": "line://app/101"
+            },
+            "margin": "md",
+            "height": "sm",
+            "gravity": "center"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img1.591.com.tw/house/2015/05/19/143204361537111108.jpg!fit.1000x.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "鄉村風套房出租",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
           },
           {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [],
-            "margin": "sm"
+            "type": "text",
+            "text": "分租套房7坪5F/5F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "9,000元/月 ",
+            "contents": []
           }
-        ],
-        "flex": 0
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAAFF",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "https://rent.591.com.tw/home/14412455"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img1.591.com.tw/house/2019/12/31/157778517291972307.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "生活機能超強分租套房",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房7坪4F/4F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "9,000元/月 ",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "line://app/103"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img2.591.com.tw/house/2022/05/02/165150634425898803.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "金城商圈鬧中取靜溫馨美套房",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房5坪5F/5F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "7,300元/月 ",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "https://rent.591.com.tw/home/14511868"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "See more",
+              "text": "查看更多房源"
+            },
+            "flex": 1,
+            "gravity": "center"
+          }
+        ]
       }
     }
-)
+  ]
+}
