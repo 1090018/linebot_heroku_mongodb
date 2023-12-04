@@ -102,7 +102,7 @@ def handle_message(event):
         message = TextSendMessage(text=data_text[:5000])
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif '@刪除' in msg:
+    elif '@我要找房' in msg:
         text = delete_all_data()
         message = TextSendMessage(text=text)
         line_bot_api.reply_message(event.reply_token, message)
