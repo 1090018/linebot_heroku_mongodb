@@ -1,243 +1,61 @@
 {
-  "type": "carousel",
-  "contents": [
+  "type": "imagemap",
+  "baseUrl": "PROVIDE_URL_FROM_YOUR_SERVER",
+  "altText": "This is an imagemap",
+  "baseSize": {
+    "width": 1040,
+    "height": 1082
+  },
+  "actions": [
     {
-      "type": "bubble",
-      "header": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "text",
-            "text": "簽約須知",
-            "size": "md",
-            "color": "#000000",
-            "align": "center",
-            "margin": "none",
-            "wrap": true,
-            "offsetBottom": "10px",
-            "contents": []
-          }
-        ]
+      "type": "message",
+      "area": {
+        "x": 87,
+        "y": 197,
+        "width": 186,
+        "height": 142
       },
-      "hero": {
-        "type": "image",
-        "url": "https://static.dd-room.com/images/article/5/f/9/5f9f6b46f0e548f68c0dc056/cover/ab17c872efe0ccca228321a3be5c353d_766x510.jpg",
-        "size": "full",
-        "aspectRatio": "15:10",
-        "aspectMode": "fit",
-        "action": {
-          "type": "uri",
-          "label": "Action",
-          "uri": "https://www.dd-room.com/article/5f9f6b46f0e548f68c0dc056"
-        },
-        "offsetBottom": "30px"
-      },
-      "body": {
-        "type": "box",
-        "layout": "horizontal",
-        "spacing": "md",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "flex": 1,
-            "offsetBottom": "30px",
-            "contents": [
-              {
-                "type": "image",
-                "url": "https://static.dd-room.com/images/article/r/d/0/rd0ghsrbd2wg7nzg/cover/c0c6c00cd390b2b6284a8c17969cd52d_766x510.jpg",
-                "margin": "md",
-                "size": "sm",
-                "aspectRatio": "4:3",
-                "aspectMode": "fit"
-              },
-              {
-                "type": "image",
-                "url": "https://static.dd-room.com/images/article/i/w/y/iwyogwdamqkq64g6/cover/03a2b016ea359a24ca09e42c893c6d91_766x510.jpg",
-                "gravity": "bottom",
-                "size": "md",
-                "aspectRatio": "4:3",
-                "aspectMode": "fit",
-                "offsetTop": "10px"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "flex": 2,
-            "offsetBottom": "20px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "租約公證是什麼？公證費用怎麼算？三大好處一次告訴你！",
-                "size": "xs",
-                "flex": 2,
-                "gravity": "top",
-                "wrap": true,
-                "action": {
-                  "type": "uri",
-                  "label": "文章",
-                  "uri": "https://www.dd-room.com/article/rd0ghsrbd2wg7nzg"
-                },
-                "contents": []
-              },
-              {
-                "type": "separator"
-              },
-              {
-                "type": "text",
-                "text": "租屋違法條款只要約定就無效！簽約別再讓權益受損啦！",
-                "size": "xs",
-                "flex": 3,
-                "gravity": "center",
-                "wrap": true,
-                "action": {
-                  "type": "uri",
-                  "label": "文章",
-                  "uri": "https://www.dd-room.com/article/iwyogwdamqkq64g6"
-                },
-                "contents": []
-              },
-              {
-                "type": "separator"
-              }
-            ]
-          }
-        ]
-      }
+      "text": "台北市"
     },
     {
-      "type": "bubble",
-      "header": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "text",
-            "text": "看房",
-            "weight": "regular",
-            "size": "md",
-            "color": "#000000",
-            "align": "center",
-            "gravity": "center",
-            "margin": "none",
-            "wrap": true,
-            "offsetBottom": "10px",
-            "contents": []
-          }
-        ]
+      "type": "message",
+      "area": {
+        "x": 315,
+        "y": 202,
+        "width": 190,
+        "height": 137
       },
-      "hero": {
-        "type": "image",
-        "url": "https://static.dd-room.com/images/article/6/1/1/611e1d8ef0e5483bb5447b3b/cover/e4106c777cfb0e430434851263066725_766x510.jpg",
-        "size": "full",
-        "aspectRatio": "15:10",
-        "aspectMode": "fit",
-        "action": {
-          "type": "uri",
-          "label": "Action",
-          "uri": "https://www.dd-room.com/article/5f9f6b46f0e548f68c0dc056"
-        },
-        "offsetBottom": "30px"
-      },
-      "body": {
-        "type": "box",
-        "layout": "horizontal",
-        "spacing": "md",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "flex": 1,
-            "offsetBottom": "30px",
-            "contents": [
-              {
-                "type": "image",
-                "url": "https://prestigeoic.com/wp-content/uploads/rent004.jpg",
-                "margin": "md",
-                "size": "sm",
-                "aspectRatio": "4:3",
-                "aspectMode": "fit"
-              },
-              {
-                "type": "image",
-                "url": "https://obs.line-scdn.net/0hSTubaxq5DHtIGxsssAhzLHBNAAp7fRZyaihFSWtMAhhiN0x_dChfGGkfUldsLR5_aH0WSG0ZUUJsfBkkJg/w1200",
-                "gravity": "bottom",
-                "size": "md",
-                "aspectRatio": "4:3",
-                "aspectMode": "fit",
-                "offsetTop": "10px"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "flex": 2,
-            "offsetBottom": "20px",
-            "contents": [
-              {
-                "type": "text",
-                "text": "租屋懶人包 10個必須了解及注意事項-房客教學",
-                "size": "xs",
-                "flex": 2,
-                "align": "start",
-                "gravity": "top",
-                "wrap": true,
-                "action": {
-                  "type": "uri",
-                  "label": "文章",
-                  "uri": "https://prestigeoic.com/10things_mustknow_renting_a_house/"
-                },
-                "offsetTop": "10px",
-                "contents": []
-              },
-              {
-                "type": "separator"
-              },
-              {
-                "type": "text",
-                "text": "租屋教戰守則-看房的六大重點",
-                "size": "xs",
-                "flex": 3,
-                "gravity": "center",
-                "wrap": true,
-                "action": {
-                  "type": "uri",
-                  "label": "文章",
-                  "uri": "https://today.line.me/tw/v2/article/WPgy8v"
-                },
-                "contents": []
-              },
-              {
-                "type": "separator"
-              }
-            ]
-          }
-        ]
-      }
+      "text": "新北市"
     },
     {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "See more",
-              "text": "查看更多房源"
-            },
-            "flex": 1,
-            "gravity": "center"
-          }
-        ]
-      }
+      "type": "message",
+      "area": {
+        "x": 548,
+        "y": 200,
+        "width": 185,
+        "height": 140
+      },
+      "text": "基隆市"
+    },
+    {
+      "type": "message",
+      "area": {
+        "x": 775,
+        "y": 201,
+        "width": 189,
+        "height": 139
+      },
+      "text": "宜蘭縣"
+    },
+    {
+      "type": "message",
+      "area": {
+        "x": 544,
+        "y": 373,
+        "width": 190,
+        "height": 141
+      },
+      "text": "彰化縣"
     }
   ]
 }
