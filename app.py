@@ -67,7 +67,7 @@ def handle_message(event):
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
     elif '找房條件' in msg:
-        flex_message = FlexSendMessage(
+        message = FlexSendMessage(
 　　　　　　alt_text='找房條件',
 　　　　　　contents={
           "type": "bubble",
@@ -125,7 +125,7 @@ def handle_message(event):
             ]
           }
         } )
-　　　　line_bot_api.reply_message(event.reply_token, flex_message)
+　　　　line_bot_api.reply_message(event.reply_token, message)
     #======MongoDB操作範例======
 
     elif '@讀取' in msg:
