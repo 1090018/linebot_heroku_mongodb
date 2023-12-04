@@ -87,7 +87,7 @@ def handle_message(event):
         message = TextSendMessage(text=str(datas))
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif '@對話紀錄' in msg:
+    elif '@ok' in msg:
         datas = read_chat_records()
         print(type(datas))
         n = 0
