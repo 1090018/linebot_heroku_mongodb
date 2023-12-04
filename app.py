@@ -17,6 +17,7 @@ from mongodb_function import *
 
 #======python的函數庫==========
 import  os
+import json
 #======python的函數庫==========
 
 app = Flask(__name__)
