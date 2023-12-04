@@ -83,7 +83,6 @@ def handle_message(event):
                 "size": "xl",
                 "align": "center",
                 "wrap": true,
-                "contents": []
               },
               {
                 "type": "box",
@@ -98,7 +97,6 @@ def handle_message(event):
                     "align": "center",
                     "margin": "md",
                     "wrap": true,
-                    "contents": []
                   }
                 ]
               }
