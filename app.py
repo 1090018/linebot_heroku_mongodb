@@ -71,8 +71,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message) 
     #==========資料庫(查詢對話紀錄功能)=============
     #============確認功能==============
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)  
+        message2 = Confirm_Template()
+        line_bot_api.push_message('Ua3021f3b4877406fc5e25aae07213801', message2)  
     #============確認功能============== 
     elif '簽約流程一覽' in msg:
         message = Carousel_Template1()
@@ -90,8 +90,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)   
     #=======資料庫(刪除功能)===========
     #==========房屋篩選===============
-        line_bot_api.reply_message(
-            event.reply_token,
+        line_bot_api.push_message(
+            'Ua3021f3b4877406fc5e25aae07213801',
             FlexSendMessage(
                 alt_text = '房屋條件篩選',
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
