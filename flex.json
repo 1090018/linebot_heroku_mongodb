@@ -3,277 +3,218 @@
   "contents": [
     {
       "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://img2.591.com.tw/house/2023/05/03/168312560606740158.jpg!750x588.water2.jpg",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover"
-      },
-      "body": {
+      "header": {
         "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
+        "layout": "horizontal",
         "contents": [
           {
             "type": "text",
-            "text": "套房出租(交通飲食方便)",
-            "weight": "bold",
-            "size": "lg",
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "6坪2F/4F公寓",
-            "weight": "regular",
+            "text": "簽約須知",
             "size": "md",
-            "flex": 0,
+            "color": "#000000",
+            "align": "center",
+            "margin": "none",
             "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "6,500元/月 ",
+            "offsetBottom": "10px",
             "contents": []
           }
         ]
       },
-      "footer": {
+      "hero": {
+        "type": "image",
+        "url": "https://static.dd-room.com/images/article/5/f/9/5f9f6b46f0e548f68c0dc056/cover/ab17c872efe0ccca228321a3be5c353d_766x510.jpg",
+        "size": "full",
+        "aspectRatio": "15:10",
+        "aspectMode": "fit",
+        "action": {
+          "type": "uri",
+          "label": "Action",
+          "uri": "https://www.dd-room.com/article/5f9f6b46f0e548f68c0dc056"
+        },
+        "offsetBottom": "30px"
+      },
+      "body": {
         "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
+        "layout": "horizontal",
+        "spacing": "md",
         "contents": [
           {
-            "type": "button",
-            "action": {
-              "type": "postback",
-              "label": "加入清單",
-              "text": "加入我的清單",
-              "data": "喜好清單"
-            },
-            "color": "#AAAAAA",
-            "margin": "md",
-            "height": "sm",
-            "style": "primary"
+            "type": "box",
+            "layout": "vertical",
+            "flex": 1,
+            "offsetBottom": "30px",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://static.dd-room.com/images/article/r/d/0/rd0ghsrbd2wg7nzg/cover/c0c6c00cd390b2b6284a8c17969cd52d_766x510.jpg",
+                "margin": "md",
+                "size": "sm",
+                "aspectRatio": "4:3",
+                "aspectMode": "fit"
+              },
+              {
+                "type": "image",
+                "url": "https://static.dd-room.com/images/article/i/w/y/iwyogwdamqkq64g6/cover/03a2b016ea359a24ca09e42c893c6d91_766x510.jpg",
+                "gravity": "bottom",
+                "size": "md",
+                "aspectRatio": "4:3",
+                "aspectMode": "fit",
+                "offsetTop": "10px"
+              }
+            ]
           },
           {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "詳細資訊",
-              "uri": "line://app/101"
-            },
-            "margin": "md",
-            "height": "sm",
-            "gravity": "center"
+            "type": "box",
+            "layout": "vertical",
+            "flex": 2,
+            "offsetBottom": "20px",
+            "contents": [
+              {
+                "type": "text",
+                "text": "租約公證是什麼？公證費用怎麼算？三大好處一次告訴你！",
+                "size": "xs",
+                "flex": 2,
+                "gravity": "top",
+                "wrap": true,
+                "action": {
+                  "type": "uri",
+                  "label": "文章",
+                  "uri": "https://www.dd-room.com/article/rd0ghsrbd2wg7nzg"
+                },
+                "contents": []
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "text",
+                "text": "租屋違法條款只要約定就無效！簽約別再讓權益受損啦！",
+                "size": "xs",
+                "flex": 3,
+                "gravity": "center",
+                "wrap": true,
+                "action": {
+                  "type": "uri",
+                  "label": "文章",
+                  "uri": "https://www.dd-room.com/article/iwyogwdamqkq64g6"
+                },
+                "contents": []
+              },
+              {
+                "type": "separator"
+              }
+            ]
           }
         ]
       }
     },
     {
       "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "text",
+            "text": "看房",
+            "weight": "regular",
+            "size": "md",
+            "color": "#000000",
+            "align": "center",
+            "gravity": "center",
+            "margin": "none",
+            "wrap": true,
+            "offsetBottom": "10px",
+            "contents": []
+          }
+        ]
+      },
       "hero": {
         "type": "image",
-        "url": "https://img1.591.com.tw/house/2015/05/19/143204361537111108.jpg!fit.1000x.water2.jpg",
+        "url": "https://static.dd-room.com/images/article/6/1/1/611e1d8ef0e5483bb5447b3b/cover/e4106c777cfb0e430434851263066725_766x510.jpg",
         "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover"
+        "aspectRatio": "15:10",
+        "aspectMode": "fit",
+        "action": {
+          "type": "uri",
+          "label": "Action",
+          "uri": "https://www.dd-room.com/article/5f9f6b46f0e548f68c0dc056"
+        },
+        "offsetBottom": "30px"
       },
       "body": {
         "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
+        "layout": "horizontal",
+        "spacing": "md",
         "contents": [
           {
-            "type": "text",
-            "text": "鄉村風套房出租",
-            "weight": "bold",
-            "size": "lg",
-            "wrap": true,
-            "contents": []
+            "type": "box",
+            "layout": "vertical",
+            "flex": 1,
+            "offsetBottom": "30px",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://prestigeoic.com/wp-content/uploads/rent004.jpg",
+                "margin": "md",
+                "size": "sm",
+                "aspectRatio": "4:3",
+                "aspectMode": "fit"
+              },
+              {
+                "type": "image",
+                "url": "https://obs.line-scdn.net/0hSTubaxq5DHtIGxsssAhzLHBNAAp7fRZyaihFSWtMAhhiN0x_dChfGGkfUldsLR5_aH0WSG0ZUUJsfBkkJg/w1200",
+                "gravity": "bottom",
+                "size": "md",
+                "aspectRatio": "4:3",
+                "aspectMode": "fit",
+                "offsetTop": "10px"
+              }
+            ]
           },
           {
-            "type": "text",
-            "text": "分租套房7坪5F/5F公寓",
-            "weight": "regular",
-            "size": "md",
-            "flex": 0,
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "9,000元/月 ",
-            "contents": []
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "postback",
-              "label": "加入清單",
-              "text": "加入我的清單",
-              "data": "喜好清單"
-            },
-            "color": "#AAAAAAFF",
-            "margin": "md",
-            "height": "sm",
-            "style": "primary"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "詳細資訊",
-              "uri": "https://rent.591.com.tw/home/14412455"
-            },
-            "margin": "md",
-            "height": "sm"
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://img1.591.com.tw/house/2019/12/31/157778517291972307.jpg!750x588.water2.jpg",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "生活機能超強分租套房",
-            "weight": "bold",
-            "size": "lg",
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "分租套房7坪4F/4F公寓",
-            "weight": "regular",
-            "size": "md",
-            "flex": 0,
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "9,000元/月 ",
-            "contents": []
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "postback",
-              "label": "加入清單",
-              "text": "加入我的清單",
-              "data": "喜好清單"
-            },
-            "color": "#AAAAAA",
-            "margin": "md",
-            "height": "sm",
-            "style": "primary"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "詳細資訊",
-              "uri": "line://app/103"
-            },
-            "margin": "md",
-            "height": "sm"
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://img2.591.com.tw/house/2022/05/02/165150634425898803.jpg!750x588.water2.jpg",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "金城商圈鬧中取靜溫馨美套房",
-            "weight": "bold",
-            "size": "lg",
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "分租套房5坪5F/5F公寓",
-            "weight": "regular",
-            "size": "md",
-            "flex": 0,
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": "7,300元/月 ",
-            "contents": []
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "postback",
-              "label": "加入清單",
-              "text": "加入我的清單",
-              "data": "喜好清單"
-            },
-            "color": "#AAAAAA",
-            "margin": "md",
-            "height": "sm",
-            "style": "primary"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "詳細資訊",
-              "uri": "https://rent.591.com.tw/home/14511868"
-            },
-            "margin": "md",
-            "height": "sm"
+            "type": "box",
+            "layout": "vertical",
+            "flex": 2,
+            "offsetBottom": "20px",
+            "contents": [
+              {
+                "type": "text",
+                "text": "租屋懶人包 10個必須了解及注意事項-房客教學",
+                "size": "xs",
+                "flex": 2,
+                "align": "start",
+                "gravity": "top",
+                "wrap": true,
+                "action": {
+                  "type": "uri",
+                  "label": "文章",
+                  "uri": "https://prestigeoic.com/10things_mustknow_renting_a_house/"
+                },
+                "offsetTop": "10px",
+                "contents": []
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "text",
+                "text": "租屋教戰守則-看房的六大重點",
+                "size": "xs",
+                "flex": 3,
+                "gravity": "center",
+                "wrap": true,
+                "action": {
+                  "type": "uri",
+                  "label": "文章",
+                  "uri": "https://today.line.me/tw/v2/article/WPgy8v"
+                },
+                "contents": []
+              },
+              {
+                "type": "separator"
+              }
+            ]
           }
         ]
       }
