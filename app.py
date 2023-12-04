@@ -81,7 +81,7 @@ def handle_message(event):
                 "weight":"bold",
                 "size":"xl",
                 "align":"center",
-                "wrap":true,
+                "wrap":True,
               },
               {
                 "type":"box",
@@ -95,7 +95,7 @@ def handle_message(event):
                     "flex":0,
                     "align":"center",
                     "margin":"md",
-                    "wrap":true,
+                    "wrap":True,
                   }
                 ]
               }
