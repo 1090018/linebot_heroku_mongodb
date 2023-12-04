@@ -67,9 +67,65 @@ def handle_message(event):
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
     elif '找房條件' in msg:
-        message = flex_message()
-        line_bot_api.reply_message(event.reply_token,message)
-
+        flex_message = FlexSendMessage(
+　　　　　　alt_text='找房條件',
+　　　　　　contents={
+          "type": "bubble",
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "篩選房屋",
+                "weight": "bold",
+                "size": "xl",
+                "align": "center",
+                "wrap": true,
+                "contents": []
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "依照您的需求，提供適合您的房屋。快來尋找心怡的房子吧！",
+                    "weight": "regular",
+                    "size": "md",
+                    "flex": 0,
+                    "align": "center",
+                    "margin": "md",
+                    "wrap": true,
+                    "contents": []
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "GO",
+                  "text": "我要找房"
+                },
+                "color": "#AAAAAA",
+                "margin": "none",
+                "height": "sm",
+                "style": "primary",
+                "gravity": "top"
+              }
+            ]
+          }
+        } )
+　　　　line_bot_api.reply_message(event.reply_token, flex_message)
     #======MongoDB操作範例======
 
     elif '@讀取' in msg:
