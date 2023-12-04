@@ -55,39 +55,7 @@ def handle_message(event):
         message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
     elif '@ok' in msg:
-        message = Confirm_Template()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '簽約流程一覽' in msg:
-        message = Carousel_Template1()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '常見租屋陷阱' in msg:
-        message = Carousel_Template2()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '租房須知' in msg:
-        message = test()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '@我要找房' in msg:
-        line_bot_api.reply_message(
-            event.reply_token,
-            FlexSendMessage(
-                alt_text = '房屋條件篩選',
-                contents = json.load(open('select.json', 'r', encoding='utf-8'))
-            )
-        )
-    #======MongoDB操作範例======
-
-    elif '@讀取' in msg:
-        datas = read_many_datas()
-        datas_len = len(datas)
-        message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
-        line_bot_api.reply_message(event.reply_token, message)
-
-    elif '@查詢' in msg:
-        datas = col_find('events')
-        message = TextSendMessage(text=str(datas))
-        line_bot_api.reply_message(event.reply_token, message)
-
-    elif '@ok' in msg:
+    #==========資料庫(查詢對話紀錄功能)=============
         datas = read_chat_records()
         print(type(datas))
         n = 0
@@ -100,15 +68,47 @@ def handle_message(event):
             n+=1
         data_text = '\n'.join(text_list)
         message = TextSendMessage(text=data_text[:5000])
+        line_bot_api.reply_message(event.reply_token, message) 
+    #==========資料庫(查詢對話紀錄功能)=============
+    #============確認功能==============
+        message = Confirm_Template()
+        line_bot_api.reply_message(event.reply_token, message)  
+    #============確認功能============== 
+    elif '簽約流程一覽' in msg:
+        message = Carousel_Template1()
         line_bot_api.reply_message(event.reply_token, message)
-
+    elif '常見租屋陷阱' in msg:
+        message = Carousel_Template2()
+        line_bot_api.reply_message(event.reply_token, message)
+    elif '租房須知' in msg:
+        message = test()
+        line_bot_api.reply_message(event.reply_token, message)
     elif '@我要找房' in msg:
+    #=======資料庫(刪除功能)===========
         text = delete_all_data()
         message = TextSendMessage(text=text)
+        line_bot_api.reply_message(event.reply_token, message)   
+    #=======資料庫(刪除功能)===========
+    #==========房屋篩選===============
+        line_bot_api.reply_message(
+            event.reply_token,
+            FlexSendMessage(
+                alt_text = '房屋條件篩選',
+                contents = json.load(open('select.json', 'r', encoding='utf-8'))  
+            )) 
+    #==========房屋篩選===============
+    #======MongoDB操作範例======
+    elif '@讀取' in msg:
+        datas = read_many_datas()
+        datas_len = len(datas)
+        message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
         line_bot_api.reply_message(event.reply_token, message)
 
+    elif '@查詢' in msg:
+        datas = col_find('events')
+        message = TextSendMessage(text=str(datas))
+        line_bot_api.reply_message(event.reply_token, message)
     #======MongoDB操作範例======
-
     else:
         pass
 
