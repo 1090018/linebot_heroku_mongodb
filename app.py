@@ -110,8 +110,7 @@ def handle_message(event):
     #======MongoDB操作範例======
 
     else:
-        message = TextSendMessage(text=msg)
-        line_bot_api.reply_message(event.reply_token, message)
+        pass
 
 @handler.add(PostbackEvent)
 def handle_message(event):
