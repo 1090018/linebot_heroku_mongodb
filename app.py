@@ -68,7 +68,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '找房條件' in msg:
         message = FlexSendMessage(
-　　　　　　alt_text='找房條件',
 　　　　　　contents={
           "type": "bubble",
           "body": {
