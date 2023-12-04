@@ -3,6 +3,7 @@
   "contents": [
     {
       "type": "bubble",
+      "size": "micro",
       "hero": {
         "type": "image",
         "url": "https://img2.591.com.tw/house/2018/11/09/154173758232473104.jpg!750x588.water2.jpg",
