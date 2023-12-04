@@ -55,18 +55,17 @@ def buttons_message_contract():
 def Confirm_Template():
 
     message = TemplateSendMessage(
-        alt_text='是否註冊成為會員？',
+        alt_text='您選擇的條件是否正確？',
         template=ConfirmTemplate(
-            text="是否註冊成為會員？",
+            text="您選擇的條件是否正確",
             actions=[
-                PostbackTemplateAction(
-                    label="馬上註冊",
-                    text="現在、立刻、馬上",
-                    data="會員註冊"
+                MessageTemplateAction(
+                    label="是",
+                    text="是",
                 ),
                 MessageTemplateAction(
-                    label="查詢其他功能",
-                    text="查詢其他功能"
+                    label="重新篩選",
+                    text="@我要找房"
                 )
             ]
         )
