@@ -1,0 +1,301 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img2.591.com.tw/house/2018/11/09/154173758232473104.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "套房出租,設備齊全",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房5坪2F/2F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "6,800元/月",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "line://app/103"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img2.591.com.tw/house/2023/03/03/167783218819679163.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "海山捷運旁#電梯單人套房",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房6坪頂層加蓋/12F電梯大樓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "8,800元/月",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "line://app/103"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img1.591.com.tw/house/2019/04/02/155418237079863110.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "近海山、雙對外窗含第四台、50M個人網路",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房5坪5F/5F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "7,500元/月",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "line://app/103"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://img2.591.com.tw/house/2023/05/08/168354037837083471.jpg!750x588.water2.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "海山捷運5分鐘溫馨大套房",
+            "weight": "bold",
+            "size": "lg",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "分租套房6坪5F/5F公寓",
+            "weight": "regular",
+            "size": "md",
+            "flex": 0,
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "7,000元/月",
+            "contents": []
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "加入清單",
+              "text": "加入我的清單",
+              "data": "喜好清單"
+            },
+            "color": "#AAAAAA",
+            "margin": "md",
+            "height": "sm",
+            "style": "primary"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "詳細資訊",
+              "uri": "https://rent.591.com.tw/home/14470285"
+            },
+            "margin": "md",
+            "height": "sm"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "See more",
+              "text": "查看更多房源"
+            },
+            "flex": 1,
+            "gravity": "center"
+          }
+        ]
+      }
+    }
+  ]
+}
