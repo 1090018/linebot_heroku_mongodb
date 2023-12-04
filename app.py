@@ -54,6 +54,7 @@ def handle_message(event):
     elif '合約專區' in msg:
         message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
+        
     elif '@ok' in msg:
     #==========資料庫(查詢對話紀錄功能)=============
         datas = read_chat_records()
@@ -74,6 +75,7 @@ def handle_message(event):
         message2 = Confirm_Template()
         line_bot_api.push_message('Ua3021f3b4877406fc5e25aae07213801', message2)  
     #============確認功能============== 
+    
     elif '簽約流程一覽' in msg:
         message = Carousel_Template1()
         line_bot_api.reply_message(event.reply_token, message)
@@ -83,6 +85,7 @@ def handle_message(event):
     elif '租房須知' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
+        
     elif '@我要找房' in msg:
     #=======資料庫(刪除功能)===========
         text = delete_all_data()
@@ -97,6 +100,14 @@ def handle_message(event):
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
             )) 
     #==========房屋篩選===============
+    
+    elif '是' in msg:
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '房屋',
+                contents = json.load(open('house.json', 'r', encoding='utf-8'))  
+            )) 
+        
     #======MongoDB操作範例======
     elif '@讀取' in msg:
         datas = read_many_datas()
