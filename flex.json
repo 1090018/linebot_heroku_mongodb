@@ -1,61 +1,383 @@
 {
-  "type": "imagemap",
-  "baseUrl": "https://storage.cloud.google.com/pig_house/%E6%88%BF%E5%B1%8B%E7%AF%A9%E9%81%B8/%E7%B8%A3%E5%B8%82%E5%9C%96.jpg",
-  "altText": "This is an imagemap",
-  "baseSize": {
-    "width": 1040,
-    "height": 1082
-  },
-  "actions": [
+  "type": "carousel",
+  "contents": [
     {
-      "type": "message",
-      "area": {
-        "x": 87,
-        "y": 197,
-        "width": 186,
-        "height": 142
-      },
-      "text": "台北市"
+      "type": "bubble",
+      "size": "deca",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "請選擇地區",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "中山區",
+                  "text": "中山區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "大安區",
+                  "text": "大安區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "信義區",
+                  "text": "信義區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "士林區",
+                  "text": "士林區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "內湖區",
+                  "text": "內湖區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "中正區",
+                  "text": "中正區"
+                },
+                "height": "sm"
+              }
+            ]
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "13px"
+      }
     },
     {
-      "type": "message",
-      "area": {
-        "x": 315,
-        "y": 202,
-        "width": 190,
-        "height": 137
-      },
-      "text": "新北市"
+      "type": "bubble",
+      "size": "deca",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "請選擇地區",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "萬華區",
+                  "text": "萬華區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "松山區",
+                  "text": "松山區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "大同區",
+                  "text": "大同區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "文山區",
+                  "text": "文山區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "北投區",
+                  "text": "北投區"
+                },
+                "height": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "南港區",
+                  "text": "南港區"
+                },
+                "height": "sm"
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      }
     },
     {
-      "type": "message",
-      "area": {
-        "x": 548,
-        "y": 200,
-        "width": 185,
-        "height": 140
-      },
-      "text": "基隆市"
+      "type": "bubble",
+      "size": "deca",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "請選擇類型",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "整層住宅",
+                  "text": "整層住宅"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "獨立套房",
+                  "text": "獨立套房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "分租套房",
+                  "text": "分租套房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "雅房",
+                  "text": "雅房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      }
     },
     {
-      "type": "message",
-      "area": {
-        "x": 775,
-        "y": 201,
-        "width": 189,
-        "height": 139
-      },
-      "text": "宜蘭縣"
+      "type": "bubble",
+      "size": "deca",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "請選擇租金",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "5,000元以下",
+                  "text": "5,000元以下"
+                },
+                "height": "sm",
+                "margin": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "5,000至10,000元",
+                  "text": "5,000至10,000元"
+                },
+                "height": "sm",
+                "margin": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "10,000至20,000元",
+                  "text": "10,000至20,000元"
+                },
+                "height": "sm",
+                "margin": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "20,000至30,000元",
+                  "text": "20,000至30,000元"
+                },
+                "height": "sm",
+                "margin": "sm"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "30,000元以上",
+                  "text": "30,000元以上"
+                },
+                "height": "sm",
+                "margin": "sm"
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      }
     },
     {
-      "type": "message",
-      "area": {
-        "x": 544,
-        "y": 373,
-        "width": 190,
-        "height": 141
-      },
-      "text": "彰化縣"
+      "type": "bubble",
+      "size": "deca",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "請選擇格局",
+            "weight": "bold",
+            "size": "sm"
+          },
+          {
+            "type": "separator",
+            "margin": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "1房",
+                  "text": "1房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "2房",
+                  "text": "2房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "3房",
+                  "text": "3房"
+                },
+                "height": "sm",
+                "margin": "xl"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "3房以上",
+                  "text": "3房以上"
+                },
+                "height": "sm",
+                "margin": "xl"
+              }
+            ]
+          }
+        ],
+        "spacing": "sm",
+        "paddingAll": "13px"
+      }
     }
   ]
 }
