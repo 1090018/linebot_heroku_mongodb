@@ -1,6 +1,6 @@
 {
   "type": "bubble",
-  "size": "micro",
+  "size": "deca",
   "header": {
     "type": "box",
     "layout": "baseline",
@@ -22,13 +22,21 @@
     "contents": [
       {
         "type": "text",
-        "text": "應繳",
-        "margin": "xs",
-        "size": "xs"
+        "text": "$15,000",
+        "size": "xl",
+        "color": "#F3B7C6"
       },
       {
         "type": "text",
-        "text": "$15,000",
+        "text": "應繳",
+        "margin": "xs",
+        "size": "xs",
+        "align": "start",
+        "position": "relative"
+      },
+      {
+        "type": "text",
+        "text": "$0",
         "size": "xl",
         "color": "#F3B7C6"
       },
@@ -37,12 +45,6 @@
         "text": "實繳",
         "margin": "xs",
         "size": "xs"
-      },
-      {
-        "type": "text",
-        "text": "$0",
-        "size": "xl",
-        "color": "#F3B7C6"
       }
     ],
     "borderWidth": "none",
