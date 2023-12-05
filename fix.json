@@ -1,0 +1,67 @@
+{
+  "type": "bubble",
+  "size": "hecto",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "請選擇欲搜尋的修繕服務",
+        "weight": "bold",
+        "size": "sm"
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "傢俱",
+          "text": "傢俱"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "message",
+          "label": "水電",
+          "text": "水堰"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "家電",
+          "text": "家電"
+        },
+        "margin": "none",
+        "height": "sm"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "門鎖",
+          "text": "門鎖"
+        },
+        "height": "sm"
+      }
+    ],
+    "flex": 0
+  }
+}
