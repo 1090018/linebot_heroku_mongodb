@@ -1,6 +1,6 @@
 {
   "type": "bubble",
-  "size": "hecto",
+  "size": "deca",
   "header": {
     "type": "box",
     "layout": "baseline",
