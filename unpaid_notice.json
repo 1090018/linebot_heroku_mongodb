@@ -22,14 +22,15 @@
     "contents": [
       {
         "type": "text",
-        "text": "您好，本月租金尚未繳納！",
-        "margin": "lg"
-      },
-      {
-        "type": "text",
         "text": "$15,000",
         "size": "xl",
         "color": "#F3B7C6"
+      },
+      {
+        "type": "text",
+        "text": "您好，本月租金尚未繳納！",
+        "margin": "xs",
+        "size": "xs"
       }
     ],
     "borderWidth": "none",
