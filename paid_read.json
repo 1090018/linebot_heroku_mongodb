@@ -1,58 +1,55 @@
 {
   "type": "bubble",
-  "body": {
+  "size": "mega",
+  "header": {
     "type": "box",
     "layout": "vertical",
-    "spacing": "sm",
     "contents": [
       {
         "type": "text",
         "text": "歷史未繳納項目",
-        "weight": "bold",
-        "size": "md",
-        "align": "center",
-        "wrap": true,
-        "contents": []
-      },
-      {
-        "type": "separator",
-        "margin": "md"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "12月份租金：$15,000",
-            "weight": "regular",
-            "size": "md",
-            "flex": 0,
-            "align": "start",
-            "margin": "md",
-            "wrap": true,
-            "contents": []
-          }
-        ]
+        "margin": "xs",
+        "color": "#FFFFFF"
       }
-    ]
+    ],
+    "alignItems": "center",
+    "spacing": "xs",
+    "margin": "xs"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "12月租金：$15,000",
+        "margin": "lg"
+      }
+    ],
+    "borderWidth": "none",
+    "cornerRadius": "none"
   },
   "footer": {
     "type": "box",
     "layout": "vertical",
-    "spacing": "sm",
+    "spacing": "none",
     "contents": [
       {
         "type": "button",
+        "style": "link",
+        "height": "sm",
         "action": {
           "type": "message",
           "label": "立即繳款",
           "text": "立即繳款"
-        },
-        "color": "#AE282800",
-        "margin": "none",
-        "height": "sm"
+        }
       }
-    ]
+    ],
+    "flex": 0
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F3B7C6"
+    }
   }
 }
