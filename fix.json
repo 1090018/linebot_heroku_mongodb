@@ -1,13 +1,13 @@
 {
   "type": "bubble",
-  "size": "hecto",
+  "size": "deca",
   "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
         "type": "text",
-        "text": "請選擇欲搜尋的修繕服務",
+        "text": "請選擇欲搜尋的修繕服務：",
         "weight": "bold",
         "size": "sm"
       },
