@@ -1,61 +1,66 @@
 {
   "type": "bubble",
-  "body": {
+  "size": "hecto",
+  "header": {
     "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
+    "layout": "baseline",
     "contents": [
       {
         "type": "text",
         "text": "繳款通知",
-        "weight": "bold",
-        "size": "md",
-        "align": "center",
-        "wrap": true,
-        "contents": []
+        "margin": "xs",
+        "color": "#FFFFFF"
+      }
+    ],
+    "alignItems": "center",
+    "spacing": "xs",
+    "margin": "xs"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "您好，本月租金尚未繳納！",
+        "margin": "lg"
       },
       {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "您好，提醒您本月租金尚未繳納！",
-            "weight": "regular",
-            "size": "sm",
-            "flex": 0,
-            "align": "center",
-            "margin": "md",
-            "wrap": true,
-            "contents": []
-          },
-          {
-            "type": "text",
-            "text": " ＄15,000",
-            "size": "lg",
-            "align": "center",
-            "contents": []
-          }
-        ]
+        "type": "text",
+        "text": "$15,000",
+        "size": "lg",
+        "color": "#F3B7C6"
       }
-    ]
+    ],
+    "borderWidth": "none",
+    "cornerRadius": "none"
   },
   "footer": {
     "type": "box",
     "layout": "vertical",
-    "spacing": "sm",
+    "spacing": "none",
     "contents": [
       {
+        "type": "separator",
+        "margin": "none"
+      },
+      {
         "type": "button",
+        "style": "link",
+        "height": "sm",
         "action": {
           "type": "message",
           "label": "立即繳款",
           "text": "立即繳款"
         },
-        "color": "#00000000",
-        "margin": "none",
-        "height": "sm"
+        "margin": "none"
       }
-    ]
+    ],
+    "flex": 0
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F3B7C6"
+    }
   }
 }
