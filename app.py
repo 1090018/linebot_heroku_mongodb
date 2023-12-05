@@ -72,10 +72,10 @@ def handle_message(event):
                 contents = json.load(open('unpaid_notice.json', 'r', encoding='utf-8'))  
             )) 
 
-    elif '繳費查詢' in msg:
+    elif '查詢繳納狀況' in msg:
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
-                alt_text = '繳費查詢',
+                alt_text = '查詢繳納狀況',
                 contents = json.load(open('paid_read.json', 'r', encoding='utf-8'))  
             ))
     elif '合約專區' in msg:
