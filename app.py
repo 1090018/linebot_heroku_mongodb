@@ -58,6 +58,14 @@ def handle_message(event):
                 alt_text = '修繕服務',
                 contents = json.load(open('fix.json', 'r', encoding='utf-8'))  
             )) 
+
+    elif '繳費' in msg:
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '繳費',
+                contents = json.load(open('check.json', 'r', encoding='utf-8'))  
+            )) 
+    
         
     elif '合約專區' in msg:
         message = buttons_message_contract()
