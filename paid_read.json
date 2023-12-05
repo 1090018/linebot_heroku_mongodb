@@ -1,13 +1,13 @@
 {
   "type": "bubble",
-  "size": "hecto",
+  "size": "micro",
   "header": {
     "type": "box",
     "layout": "baseline",
     "contents": [
       {
         "type": "text",
-        "text": "歷史未繳納項目",
+        "text": "繳納狀況",
         "margin": "xs",
         "color": "#FFFFFF"
       }
@@ -22,8 +22,27 @@
     "contents": [
       {
         "type": "text",
-        "text": "12月租金：$15,000",
-        "margin": "lg"
+        "text": "應繳",
+        "margin": "xs",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "$15,000",
+        "size": "xl",
+        "color": "#F3B7C6"
+      },
+      {
+        "type": "text",
+        "text": "實繳",
+        "margin": "xs",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "$0",
+        "size": "xl",
+        "color": "#F3B7C6"
       }
     ],
     "borderWidth": "none",
@@ -46,7 +65,8 @@
           "type": "message",
           "label": "立即繳款",
           "text": "立即繳款"
-        }
+        },
+        "margin": "none"
       }
     ],
     "flex": 0
