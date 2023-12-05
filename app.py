@@ -77,7 +77,7 @@ def handle_message(event):
             FlexSendMessage(
                 alt_text = '繳費查詢',
                 contents = json.load(open('paid_read.json', 'r', encoding='utf-8'))  
-        
+            ))
     elif '合約專區' in msg:
         message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
