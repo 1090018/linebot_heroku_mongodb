@@ -35,6 +35,10 @@
     "spacing": "none",
     "contents": [
       {
+        "type": "separator",
+        "margin": "none"
+      },
+      {
         "type": "button",
         "style": "link",
         "height": "sm",
