@@ -1,0 +1,61 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "繳款通知",
+        "weight": "bold",
+        "size": "md",
+        "align": "center",
+        "wrap": true,
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "您好，提醒您本月租金尚未繳納！",
+            "weight": "regular",
+            "size": "sm",
+            "flex": 0,
+            "align": "center",
+            "margin": "md",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": " ＄15,000",
+            "size": "lg",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "立即繳款",
+          "text": "立即繳款"
+        },
+        "color": "#00000000",
+        "margin": "none",
+        "height": "sm"
+      }
+    ]
+  }
+}
