@@ -47,7 +47,20 @@ def buttons_message_contract():
     )
     return message
 
-#TemplateSendMessa否，重新篩選",
+#TemplateSendMessage - ConfirmTemplate(確認介面訊息)
+def Confirm_Template():
+
+    message = TemplateSendMessage(
+        alt_text='您選擇的條件是否正確？',
+        template=ConfirmTemplate(
+            text="您選擇的條件是否正確",
+            actions=[
+                MessageTemplateAction(
+                    label="是",
+                    text="是",
+                ),
+                MessageTemplateAction(
+                    label="否，重新篩選",
                     text="@我要找房"
                 )
             ]
