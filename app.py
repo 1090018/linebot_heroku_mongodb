@@ -109,6 +109,12 @@ def handle_message(event):
     elif '常見租屋陷阱' in msg:
         message = Carousel_Template2()
         line_bot_api.reply_message(event.reply_token, message)
+    elif '退租注意事項' in msg:
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '退租注意事項',
+                contents = json.load(open('go.json', 'r', encoding='utf-8'))  
+            )) 
     elif '租房須知' in msg:
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
