@@ -9,10 +9,6 @@ def buttons_message_law():
             title="您有法律相關疑問嗎?",
             text="以下是我們提供的法律服務：",
             actions=[
-                 MessageTemplateAction(
-                    label="常見問題",
-                    text="常見問題"
-                ),
                 MessageTemplateAction(
                     label="法律懶人包",
                     text="查看懶人包"
