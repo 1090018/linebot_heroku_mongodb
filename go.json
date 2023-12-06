@@ -1,0 +1,62 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "退租注意事項",
+        "size": "lg",
+        "style": "normal",
+        "weight": "bold"
+      },
+      {
+        "type": "text",
+        "text": "租約到期當日，與房東一同點交設備、",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "確認屋內狀況，確認完一切事宜後，",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "簽收退租憑證即可結束租約關係",
+        "size": "xs"
+      }
+    ],
+    "spacing": "none",
+    "margin": "none"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "1.租約到期日前通知房東",
+        "align": "start"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "2.清點房東提供設備數量"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "3.確認設備正常，並拍照或錄影存證",
+        "flex": 1
+      },
+      {
+        "type": "separator"
+      }
+    ]
+  }
+}
