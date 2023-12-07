@@ -65,17 +65,17 @@ def handle_message(event):
                 alt_text = '收款',
                 contents = json.load(open('check.json', 'r', encoding='utf-8'))  
             )) 
+    elif '繳費查詢' in msg:
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '繳費查詢',
+                contents = json.load(open('unpaid_notice.json', 'r', encoding='utf-8'))  
+            )) 
     elif '繳費' in msg:
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '繳費',
                 contents = json.load(open('fee.json', 'r', encoding='utf-8'))  
-            )) 
-    elif '繳款通知' in msg:
-        line_bot_api.reply_message(event.reply_token,
-            FlexSendMessage(
-                alt_text = '繳款通知',
-                contents = json.load(open('unpaid_notice.json', 'r', encoding='utf-8'))  
             )) 
 
     elif '查詢繳納狀況' in msg:
