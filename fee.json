@@ -43,8 +43,8 @@
         "height": "sm",
         "action": {
           "type": "message",
-          "label": "繳費帳號",
-          "text": "繳費帳號"
+          "label": "房東帳號",
+          "text": "房東帳號"
         }
       },
       {
