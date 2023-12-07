@@ -48,43 +48,43 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '法律諮詢' in msg:
+    if msg =='法律諮詢':
         message = buttons_message_law()
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif '修繕服務' in msg:
+    elif msg =='修繕服務':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '修繕服務',
                 contents = json.load(open('fix.json', 'r', encoding='utf-8'))  
             )) 
 
-    elif '收款' in msg:
+    elif msg =='收款':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '收款',
                 contents = json.load(open('check.json', 'r', encoding='utf-8'))  
             )) 
-    elif '繳費查詢' in msg:
+    elif msg =='繳費查詢':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '繳費查詢',
                 contents = json.load(open('unpaid_notice.json', 'r', encoding='utf-8'))  
             )) 
-    elif msg == '繳費':
+    elif msg =='繳費':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '繳費',
                 contents = json.load(open('fee.json', 'r', encoding='utf-8'))  
             )) 
 
-    elif '查詢繳納狀況' in msg:
+    elif msg =='查詢繳納狀況':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '查詢繳納狀況',
                 contents = json.load(open('paid_read.json', 'r', encoding='utf-8'))  
             ))
-    elif '合約專區' in msg:
+    elif msg =='合約專區':
         message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
         
