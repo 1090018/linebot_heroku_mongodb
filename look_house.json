@@ -85,7 +85,7 @@
           },
           {
             "type": "text",
-            "text": "4.晴天及雨天各看一次，晴天可以看是否有西",
+            "text": "4.晴天及雨天各看一次，晴天可以看是否",
             "margin": "md",
             "size": "xs"
           },
@@ -94,7 +94,7 @@
           },
           {
             "type": "text",
-            "text": "曬、反潮的問題，雨天可以看是否有漏水、",
+            "text": "有西曬、反潮的問題，雨天可以看是否有",
             "margin": "md",
             "size": "xs"
           },
@@ -103,7 +103,7 @@
           },
           {
             "type": "text",
-            "text": "滲水的問題",
+            "text": "漏水、滲水的問題",
             "margin": "md",
             "size": "xs"
           },
@@ -112,7 +112,7 @@
           },
           {
             "type": "text",
-            "text": "除了房屋內的設施外，觀察其公共空間，",
+            "text": "5.觀察其公共空間，如走道、樓梯間是否",
             "margin": "md",
             "size": "xs"
           },
@@ -121,7 +121,36 @@
           },
           {
             "type": "text",
-            "text": "如走道、樓梯間是否髒亂，",
+            "margin": "md",
+            "size": "xs",
+            "text": "髒亂，大樓管理是否良好"
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "看房注意事項",
+            "margin": "xs",
+            "size": "md",
+            "weight": "bold",
+            "style": "normal"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "6.觀察其安全設施，是否有逃生設備、防",
             "margin": "md",
             "size": "xs"
           },
@@ -130,7 +159,34 @@
           },
           {
             "type": "text",
-            "text": "大樓管理是否良好等",
+            "text": "火、防盜設備等",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "7.觀察周遭環境，生活機能是否便利，是",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "否有嫌惡設施(如宮廟、高壓電塔等)",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "8.房屋是否為合法建物",
             "margin": "md",
             "size": "xs"
           },
@@ -145,12 +201,64 @@
       "header": {
         "type": "box",
         "layout": "vertical",
-        "contents": []
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": []
+        "contents": [
+          {
+            "type": "text",
+            "text": "看房注意事項",
+            "margin": "xs",
+            "size": "md",
+            "weight": "bold",
+            "style": "normal"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "9.可以向鄰居詢問房屋的居住品質跟鄰居的",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "素質等，通常可得到較真實的答案。",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "10.檢查房屋現況（有無漏水、壁癌）、房",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "東有提供哪些家具、設備以及是否都可以使",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "用、使用付費情形是如何。",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          }
+        ]
       }
     }
   ]
