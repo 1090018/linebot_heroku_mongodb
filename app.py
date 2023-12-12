@@ -124,8 +124,14 @@ def handle_message(event):
     elif '看房注意事項' in msg:
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
-                alt_text = '退租注意事項',
+                alt_text = '看房注意事項',
                 contents = json.load(open('look_house.json', 'r', encoding='utf-8'))  
+            )) 
+    elif '簽約注意事項' in msg:
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '簽約注意事項',
+                contents = json.load(open('sign.json', 'r', encoding='utf-8'))  
             )) 
     elif '租房須知' in msg:
         message = test()
