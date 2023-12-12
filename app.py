@@ -106,7 +106,7 @@ def handle_message(event):
     #==========資料庫(查詢對話紀錄功能)=============
     #============確認功能==============
         message2 = Confirm_Template()
-        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d', message2)  
+        line_bot_api.push_message('Ua3021f3b4877406fc5e25aae07213801', message2)  
     #============確認功能============== 
     
     elif '簽約流程一覽' in msg:
