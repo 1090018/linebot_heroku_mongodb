@@ -1,100 +1,95 @@
 {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "header": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "簽約注意事項",
-            "margin": "xs",
-            "size": "md",
-            "weight": "bold",
-            "style": "normal"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "☝金額",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "text",
-            "text": "房租金額、繳交期限與額外費用的計算。",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "☝期限",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "text",
-            "text": "租賃期限與實際可搬入時間。",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "☝詢問",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "text",
-            "text": "詢問前位房客水電、瓦斯費用處理方式。",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "☝法律",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "text",
-            "text": "確認是否需要進行公證程序。",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "text",
-            "text": "☝內容",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "text",
-            "text": "不合理條文之確認",
-            "margin": "md",
-            "size": "xs"
-          },
-          {
-            "type": "separator"
-          }
-        ]
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "簽約注意事項",
+        "margin": "xs",
+        "size": "md",
+        "weight": "bold",
+        "style": "normal"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "☝金額",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "房租金額、繳交期限與額外費用的計算。",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "☝期限",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "租賃期限與實際可搬入時間。",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "☝詢問",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "詢問前位房客水電、瓦斯費用處理方式。",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "☝法律",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "確認是否需要進行公證程序。",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "text",
+        "text": "☝內容",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "text",
+        "text": "不合理條文之確認",
+        "margin": "md",
+        "size": "xs"
+      },
+      {
+        "type": "separator"
       }
-    }
-  ]
+    ]
+  }
 }
