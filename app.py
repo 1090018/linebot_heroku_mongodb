@@ -144,8 +144,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)   
     #=======資料庫(刪除功能)===========
     #==========房屋篩選===============
-        line_bot_api.push_message(
-            'Ucc153741ec80f0246a98ecad238e614d',
+        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d',
             FlexSendMessage(
                 alt_text = '房屋條件篩選',
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
