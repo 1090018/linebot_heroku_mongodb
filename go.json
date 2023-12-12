@@ -50,7 +50,7 @@
         "type": "text",
         "text": "☝租約到期日前通知房東",
         "align": "start",
-        "size": "sm",
+        "size": "xs",
         "margin": "none"
       },
       {
@@ -59,7 +59,7 @@
       {
         "type": "text",
         "text": "☝清點房東提供設備數量",
-        "size": "sm"
+        "size": "xs"
       },
       {
         "type": "separator"
@@ -68,7 +68,7 @@
         "type": "text",
         "text": "☝確認設備正常，並拍照存證",
         "flex": 1,
-        "size": "sm"
+        "size": "xs"
       },
       {
         "type": "separator"
