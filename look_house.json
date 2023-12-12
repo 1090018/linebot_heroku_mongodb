@@ -1,0 +1,157 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "看房注意事項",
+            "margin": "xs",
+            "size": "md",
+            "weight": "bold",
+            "style": "normal"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "1.最好找人同行，看屋時保持大門開啟",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "2.白天及晚上各看一次，白天可以看採光",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "及通風，晚上可以看附近是否吵雜、走路",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "是否安全等",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "3.多看多比較不吃虧",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "看房注意事項",
+            "margin": "xs",
+            "size": "md",
+            "weight": "bold",
+            "style": "normal"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "4.晴天及雨天各看一次，晴天可以看是否有西",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "曬、反潮的問題，雨天可以看是否有漏水、",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "滲水的問題",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "除了房屋內的設施外，觀察其公共空間，",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "如走道、樓梯間是否髒亂，",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "大樓管理是否良好等",
+            "margin": "md",
+            "size": "xs"
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      }
+    }
+  ]
+}
