@@ -23,24 +23,20 @@ def buttons_message_law():
     return message
 
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
-def buttons_message_contract():
+def buttons_message_contract():#房客合約
     message = TemplateSendMessage(
         alt_text='合約',
         template=ButtonsTemplate(
             title="請選擇您需要的合約服務",
             text="以下是我們提供的服務：",
             actions=[
-                URITemplateAction(
-                    label="合約範本",
-                    uri="https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E7%AF%84%E6%9C%AC%20(1).pdf"
-                ),
-                MessageTemplateAction(
-                    label="上傳合約",
-                    text="上傳合約"
-                ),
                 MessageTemplateAction(
                     label="查看合約",
                     text="查看合約"
+                ),
+                MessageTemplateAction(
+                    label="確認合約",
+                    text="確認合約"
                 )
             ]
         )
