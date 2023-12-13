@@ -14,6 +14,9 @@
         "margin": "xs"
       },
       {
+        "type": "separator"
+      },
+      {
         "type": "text",
         "text": "租約到期當日，與房東一同點交設",
         "size": "xs",
