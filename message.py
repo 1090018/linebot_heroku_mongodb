@@ -25,7 +25,7 @@ def buttons_message_law():
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
 def buttons_message_contract():#房客合約
     message = TemplateSendMessage(
-        alt_text='合約',
+        alt_text='合約專區',
         template=ButtonsTemplate(
             title="請選擇您需要的合約服務",
             text="以下是我們提供的服務：",
@@ -42,6 +42,33 @@ def buttons_message_contract():#房客合約
         )
     )
     return message
+    
+#TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
+def buttons_message_contract():#房東合約
+    message = TemplateSendMessage(
+        alt_text='合約',
+        template=ButtonsTemplate(
+            title="請選擇您需要的合約服務",
+            text="以下是我們提供的服務：",
+            actions=[
+                MessageTemplateAction(
+                    label="上傳合約",
+                    text="上傳合約"
+                ),
+                MessageTemplateAction(
+                    label="確認合約",
+                    text="確認合約"
+                ),
+                MessageTemplateAction(
+                    label="查看合約",
+                    text="查看合約"
+                )
+            ]
+        )
+    )
+    return message
+
+
 
 #TemplateSendMessage - ConfirmTemplate(確認介面訊息)
 def Confirm_Template():
