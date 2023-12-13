@@ -91,7 +91,11 @@ def handle_message(event):
     elif msg =='合約':#(房東)
         message = buttons_message_contract2()
         line_bot_api.reply_message(event.reply_token, message)
-        
+
+    elif msg =='確認合約':#(房客)
+        message = Confirm_Template_contract()
+        line_bot_api.reply_message(event.reply_token, message)
+
     elif msg =='@ok':
     #==========資料庫(查詢對話紀錄功能)=============
         datas = read_chat_records()
