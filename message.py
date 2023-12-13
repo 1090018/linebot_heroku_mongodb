@@ -95,6 +95,27 @@ def Confirm_Template():
     )
     return message
 
+#TemplateSendMessage - ConfirmTemplate(確認介面訊息)
+def Confirm_Template_contract():
+
+    message = TemplateSendMessage(
+        alt_text='合約內容有無疑問？',
+        template=ConfirmTemplate(
+            text="合約內容有無疑問？",
+            actions=[
+                MessageTemplateAction(
+                    label="有",
+                    text="有疑問",
+                ),
+                MessageTemplateAction(
+                    label="無",
+                    text="無疑問"
+                )
+            ]
+        )
+    )
+    return message
+    
 #旋轉木馬按鈕訊息介面
 
 def Carousel_Template1():
