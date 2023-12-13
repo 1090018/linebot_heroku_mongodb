@@ -23,7 +23,7 @@ def buttons_message_law():
     return message
 
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
-def buttons_message_contract():#房客合約
+def buttons_message_contract1():#房客合約
     message = TemplateSendMessage(
         alt_text='合約專區',
         template=ButtonsTemplate(
@@ -44,7 +44,7 @@ def buttons_message_contract():#房客合約
     return message
     
 #TemplateSendMessage - ButtonsTemplate (按鈕介面訊息)
-def buttons_message_contract():#房東合約
+def buttons_message_contract2():#房東合約
     message = TemplateSendMessage(
         alt_text='合約',
         template=ButtonsTemplate(
