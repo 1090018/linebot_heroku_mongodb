@@ -84,11 +84,11 @@ def handle_message(event):
                 alt_text = '查詢繳納狀況',
                 contents = json.load(open('paid_read.json', 'r', encoding='utf-8'))  
             ))
-    elif msg =='合約專區':
+    elif msg =='合約專區':#(房客)
         message = buttons_message_contract1()
         line_bot_api.reply_message(event.reply_token, message)
         
-    elif msg =='合約':
+    elif msg =='合約':#(房東)
         message = buttons_message_contract2()
         line_bot_api.reply_message(event.reply_token, message)
         
