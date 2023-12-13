@@ -88,7 +88,7 @@ def handle_message(event):
         message = buttons_message_contract()
         line_bot_api.reply_message(event.reply_token, message)
         
-    elif '@ok' in msg:
+    elif msg =='@ok':
     #==========資料庫(查詢對話紀錄功能)=============
         datas = read_chat_records()
         print(type(datas))
@@ -109,35 +109,35 @@ def handle_message(event):
         line_bot_api.push_message('Uf5bb8a29bf45738867326f69f6b6bf8d', message2)  
     #============確認功能============== 
     
-    elif '簽約流程一覽' in msg:
+    elif msg =='簽約流程一覽':
         message = Carousel_Template1()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '常見租屋陷阱' in msg:
+    elif msg =='常見租屋陷阱':
         message = Carousel_Template2()
         line_bot_api.reply_message(event.reply_token, message)
-    elif '退租注意事項' in msg:
+    elif msg =='退租注意事項':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '退租注意事項',
                 contents = json.load(open('go.json', 'r', encoding='utf-8'))  
             )) 
-    elif '看房注意事項' in msg:
+    elif msg =='看房注意事項':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '看房注意事項',
                 contents = json.load(open('look_house.json', 'r', encoding='utf-8'))  
             )) 
-    elif '簽約注意事項' in msg:
+    elif msg =='簽約注意事項':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '簽約注意事項',
                 contents = json.load(open('sign.json', 'r', encoding='utf-8'))  
             )) 
-    elif '租房須知' in msg:
+    elif msg =='租房須知':
         message = test()
         line_bot_api.reply_message(event.reply_token, message)
         
-    elif '@我要找房' in msg:
+    elif msg =='@我要找房':
     #=======資料庫(刪除功能)===========
         text = delete_all_data()
         message = TextSendMessage(text=text)
@@ -151,7 +151,7 @@ def handle_message(event):
             )) 
     #==========房屋篩選===============
     
-    elif '是' in msg:
+    elif msg =='是':
         line_bot_api.reply_message(event.reply_token,
             FlexSendMessage(
                 alt_text = '房屋',
@@ -159,13 +159,13 @@ def handle_message(event):
             )) 
         
     #======MongoDB操作範例======
-    elif '@讀取' in msg:
+    elif msg =='@讀取':
         datas = read_many_datas()
         datas_len = len(datas)
         message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif '@查詢' in msg:
+    elif msg =='@查詢':
         datas = col_find('events')
         message = TextSendMessage(text=str(datas))
         line_bot_api.reply_message(event.reply_token, message)
