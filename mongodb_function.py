@@ -7,7 +7,9 @@ client = pymongo.MongoClient("mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.m
 #第一個db的建立
 db = client['MongoClient']
 col = db['Database']
-data = {"userID":userID}
+# 將資料庫中的 userId 欄位的值存入 userID 變數中
+userID = data["userId"]
+
 
 #判斷key是否在指定的dictionary當中，若有則return True
 def dicMemberCheck(key, dicObj):
