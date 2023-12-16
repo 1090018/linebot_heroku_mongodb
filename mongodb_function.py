@@ -8,7 +8,7 @@ client = pymongo.MongoClient("mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.m
 db = client['MongoClient']
 col = db['Database']
 # 將資料庫中的 userId 欄位的值存入 userID 變數中
-userID = db["userId"]
+userID = col["userId"]
 
 
 #判斷key是否在指定的dictionary當中，若有則return True
