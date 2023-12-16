@@ -13,6 +13,7 @@ from linebot.models import *
 from message import *
 from new import *
 from mongodb_function import *
+from mongodb_function import userID
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
