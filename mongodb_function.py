@@ -73,6 +73,10 @@ def col_find(key):
             break
     print(data)
     return data
+    
+def get_user_id():
+    # 在這裡進行取得 userID 的操作
+    return userID
 
 if __name__ == '__main__':
     print(read_many_datas())
