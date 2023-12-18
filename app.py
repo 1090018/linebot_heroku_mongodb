@@ -184,7 +184,6 @@ def handle_message(event):
             else:
                 text_list.append(data)
             n+=1
-        data_text = '\n'.join(text_list)
         message = TextSendMessage(text=data_text[:5000])
         line_bot_api.reply_message(event.reply_token, message) 
 
