@@ -5,25 +5,23 @@ import pymongo
 client = pymongo.MongoClient("mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.mongodb.net/?retryWrites=true&w=majority")
 
 #第一個db的建立
-def constructor_house(): 
-    db = client['MongoClient']
-    return db
+db = client['MongoClient']
+col = db['Database']
 
-#判斷userID
-def dicMemberCheck():
-    constructor_house()
-    cl = db['Database']
-    dataList = list(collect.find({"userID": userID}))
-    return dataList
-    
+#判斷key是否在指定的dictionary當中，若有則return True
+def dicMemberCheck(key, dicObj):
+    if key in dicObj:
+        return True
+    else:
+        return False
 
 #寫入資料data是dictionary
 def write_one_data(data):
-    cl.insert_one(data)
+    col.insert_one(data)
 
 #寫入多筆資料，data是一個由dictionary組成的list
 def write_many_datas(data):
-    cl.insert_many(data)
+    col.insert_many(data)
 
 #讀取所有LINE的webhook event紀錄資料
 def read_many_datas():
@@ -72,10 +70,6 @@ def col_find(key):
             break
     print(data)
     return data
-    
-def get_user_id():
-    # 在這裡進行取得 userID 的操作
-    return userID
 
 if __name__ == '__main__':
     print(read_many_datas())
