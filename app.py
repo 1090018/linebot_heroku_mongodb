@@ -173,10 +173,20 @@ def handle_message(event):
         message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif msg == '分租套房':
-        datas = col_find_user_ids()
-        message = TextSendMessage(text=str(datas))
-        line_bot_api.reply_message(event.reply_token, message)
+    elif msg =='@userid':
+        datas = read_chat_userid()
+        print(type(datas))
+        n = 0
+        text_list = []
+        for data in datas:
+            if '@' in data:
+                continue
+            else:
+                text_list.append(data)
+            n+=1
+        data_text = '\n'.join(text_list)
+        message = TextSendMessage(text=data_text[:5000])
+        line_bot_api.reply_message(event.reply_token, message) 
 
 @handler.add(PostbackEvent)
 def handle_message(event):
