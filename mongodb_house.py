@@ -77,5 +77,20 @@ def read_chat_userid():
     print(data_list)
     return data_list
 
+    
+    #userid
+    def userid():
+        datas = read_chat_userid()
+        n = 0
+        text_list = []
+        for data in datas:
+            if '@' in data:
+                continue
+            else:
+                text_list.append(data)
+            n+=1
+        userid = str(text_list[0])
+        return userid
+
 if __name__ == '__main__':
     print(read_many_datas())
