@@ -174,18 +174,6 @@ def handle_message(event):
         message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif msg =='@userid':
-        datas = read_chat_userid()
-        n = 0
-        text_list = []
-        for data in datas:
-            if '@' in data:
-                continue
-            else:
-                text_list.append(data)
-            n+=1
-        userid = str(text_list[0])
-        return userid
 @handler.add(PostbackEvent)
 def handle_message(event):
     print(event.postback.data)
