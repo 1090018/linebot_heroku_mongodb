@@ -11,7 +11,7 @@ def constructor_house():
 
 #判斷userID
 def dicMemberCheck():
-    db = constructor_house()
+    constructor_house()
     col = db['Database']
     dataList = list(collect.find({"userID": userID}))
     return dataList
