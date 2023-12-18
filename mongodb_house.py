@@ -7,6 +7,7 @@ client = pymongo.MongoClient("mongodb+srv://Pighouse:Pighouse@pighouse.vgionxv.m
 #第一個db的建立
 db = client['MongoClient']
 col = db['Database']
+userid = ''
 
 #判斷key是否在指定的dictionary當中，若有則return True
 def dicMemberCheck(key, dicObj):
@@ -82,7 +83,6 @@ def read_chat_userid():
     def userid():
         datas = read_chat_userid()
         n = 0
-        userid = ''
         text_list = []
         for data in datas:
             if '@' in data:
