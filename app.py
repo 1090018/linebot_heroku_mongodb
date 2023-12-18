@@ -174,7 +174,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 
     elif msg =='分租套房':
-        datas = col_find('events')
+        datas = col_find_user_ids('events')
         message = TextSendMessage(text=str(datas))
         line_bot_api.reply_message(event.reply_token, message)
     #======MongoDB操作範例======
