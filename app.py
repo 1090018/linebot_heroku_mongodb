@@ -176,7 +176,6 @@ def handle_message(event):
 
     elif msg =='@userid':
         datas = read_chat_userid()
-        print(type(datas))
         n = 0
         text_list = []
         for data in datas:
