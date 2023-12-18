@@ -113,20 +113,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message) 
     #==========資料庫(查詢對話紀錄功能)=============
     #============確認功能==============
-        datas = read_chat_userid()
-        print(type(datas))
-        n = 0
-        text_list = []
-        for data in datas:
-            if '@' in data:
-                continue
-            else:
-                text_list.append(data)
-            n+=1
-        data_text = '\n'.join(text_list)
-        userid = TextSendMessage(text=data_text[:5000])
         message2 = Confirm_Template()
-        line_bot_api.push_message(userid, message2)  
+        line_bot_api.push_message(str(read_chat_userid()), message2)  
     #============確認功能============== 
     
     elif msg =='簽約流程一覽':
@@ -158,30 +146,18 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
         
     elif msg =='@我要找房':
-    #==========房屋篩選===============
-        datas = read_chat_userid()
-        print(type(datas))
-        n = 0
-        text_list = []
-        for data in datas:
-            if '@' in data:
-                continue
-            else:
-                text_list.append(data)
-            n+=1
-        data_text = '\n'.join(text_list)
-        userid = TextSendMessage(text=data_text[:5000])
-        line_bot_api.push_message(userid,
-            FlexSendMessage(
-                alt_text = '房屋條件篩選',
-                contents = json.load(open('select.json', 'r', encoding='utf-8'))  
-            )) 
-    #==========房屋篩選===============
     #=======資料庫(刪除功能)===========
         text = delete_all_data()
         message = TextSendMessage(text=text)
         line_bot_api.reply_message(event.reply_token, message)   
     #=======資料庫(刪除功能)===========
+    #==========房屋篩選===============
+        line_bot_api.push_message(str(read_chat_userid()),
+            FlexSendMessage(
+                alt_text = '房屋條件篩選',
+                contents = json.load(open('select.json', 'r', encoding='utf-8'))  
+            )) 
+    #==========房屋篩選===============
     
     
     elif msg =='是':
@@ -210,8 +186,8 @@ def handle_message(event):
                 text_list.append(data)
             n+=1
         data_text = '\n'.join(text_list)
-        userid = TextSendMessage(text=data_text[:5000])
-        line_bot_api.reply_message(event.reply_token, userid) 
+        message = TextSendMessage(text=data_text[:5000])
+        line_bot_api.reply_message(event.reply_token, message) 
 
 @handler.add(PostbackEvent)
 def handle_message(event):
