@@ -63,11 +63,17 @@ def delete_all_data():
         return "資料刪除出錯"
 
 #找到最新的一筆資料
-def col_find_user_ids():
+def read_chat_userid():
     data_list = []
     for data in col.find():
-        if 'source' in data and 'userId' in data['source']:
-            data_list.append(data['source']['userId'])
+        if dicMemberCheck('events',data):
+            if dicMemberCheck('source',data['events'][0]):
+                if dicMemberCheck('userId',data['events'][0]['source']):
+                    print(data['events'][0]['source']['userId'])
+                    data_list.append(data['events'][0]['source']['userId'])
+        else:
+            print('非LINE訊息',data)
+
     print(data_list)
     return data_list
 
