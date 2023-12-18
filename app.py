@@ -176,7 +176,16 @@ def handle_message(event):
 
     elif msg =='@userid':
         datas = read_chat_userid()
-        message = TextSendMessage(text=datas)
+        n = 0
+        text_list = []
+        for data in datas:
+            if '@' in data:
+                continue
+            else:
+                text_list.append(data)
+            n+=1
+        data_text = '\n'.join(text_list)
+        message = TextSendMessage(text=data_text[:5000])
         line_bot_api.reply_message(event.reply_token, message) 
 
 @handler.add(PostbackEvent)
