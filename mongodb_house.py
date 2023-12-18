@@ -64,12 +64,12 @@ def delete_all_data():
 
 #找到最新的一筆資料
 def col_find_user_ids():
-    user_ids = []
-    for data in col.find({}, {"source.userId": 1, "_id": 0}):
+    data_list = []
+    for data in col.find():
         if 'source' in data and 'userId' in data['source']:
-            user_ids.append(data['source']['userId'])
-    print(user_ids)
-    return user_ids
+            data_list.append(data['source']['userId'])
+    print(data_list)
+    return data_list
 
 if __name__ == '__main__':
     print(read_many_datas())
