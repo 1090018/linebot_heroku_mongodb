@@ -63,13 +63,13 @@ def delete_all_data():
         return "資料刪除出錯"
 
 #找到最新的一筆資料
-def col_find(key):
-    for data in col.find({}).sort('_id',-1):
-        if dicMemberCheck(key,data):
-            data = data[key]
-            break
-    print(data)
-    return data
+def col_find_user_ids():
+    user_ids = []
+    for data in col.find({}, {"source.userId": 1, "_id": 0}):
+        if 'source' in data and 'userId' in data['source']:
+            user_ids.append(data['source']['userId'])
+    print(user_ids)
+    return user_ids
 
 if __name__ == '__main__':
     print(read_many_datas())
