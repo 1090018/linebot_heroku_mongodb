@@ -82,6 +82,7 @@ def read_chat_userid():
     def userid():
         datas = read_chat_userid()
         n = 0
+        userid = ''
         text_list = []
         for data in datas:
             if '@' in data:
