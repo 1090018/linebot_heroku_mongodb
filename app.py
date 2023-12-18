@@ -184,9 +184,8 @@ def handle_message(event):
             else:
                 text_list.append(data)
             n+=1
-        message = TextSendMessage(text=data_text[:5000])
-        line_bot_api.reply_message(event.reply_token, message) 
-
+        userid = str(text_list[0])
+        return userid
 @handler.add(PostbackEvent)
 def handle_message(event):
     print(event.postback.data)
