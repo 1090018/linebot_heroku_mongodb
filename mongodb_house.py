@@ -64,13 +64,14 @@ def delete_all_data():
 
 #找到最新的一筆資料
 def read_chat_userid():
+    data = col.find().sort('_id', -1).limit(1)
     data_list = []
-    for data in col.find():
-        if dicMemberCheck('events',data):
-            if dicMemberCheck('source',data['events'][0]):
-                if dicMemberCheck('userId',data['events'][0]['source']):
-                    print(data['events'][0]['source']['userId'])
-                    data_list.append(data['events'][0]['source']['userId'])
+    for record in data:
+        if dicMemberCheck('events', record):
+            if dicMemberCheck('source', record['events'][0]):
+                if dicMemberCheck('userId', record['events'][0]['source']):
+                    print(record['events'][0]['source']['userId'])
+                    data_list.append(record['events'][0]['source']['userId'])
         else:
             print('非LINE訊息',data)
 
