@@ -173,7 +173,7 @@ def handle_message(event):
         message = TextSendMessage(text=f'資料數量，一共{datas_len}條')
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif msg =='@查詢':
+    elif msg =='分租套房':
         datas = col_find('events')
         message = TextSendMessage(text=str(datas))
         line_bot_api.reply_message(event.reply_token, message)
