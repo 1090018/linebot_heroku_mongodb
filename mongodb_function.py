@@ -12,18 +12,18 @@ def constructor_house():
 #判斷userID
 def dicMemberCheck():
     constructor_house()
-    col = db['Database']
+    cl = db['Database']
     dataList = list(collect.find({"userID": userID}))
     return dataList
     
 
 #寫入資料data是dictionary
 def write_one_data(data):
-    col.insert_one(data)
+    cl.insert_one(data)
 
 #寫入多筆資料，data是一個由dictionary組成的list
 def write_many_datas(data):
-    col.insert_many(data)
+    cl.insert_many(data)
 
 #讀取所有LINE的webhook event紀錄資料
 def read_many_datas():
