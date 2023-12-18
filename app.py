@@ -114,6 +114,7 @@ def handle_message(event):
     #==========資料庫(查詢對話紀錄功能)=============
     #============確認功能==============
         message2 = Confirm_Template()
+        userid = read_chat_userid() 
         line_bot_api.push_message(userid, message2)  
     #============確認功能============== 
     
