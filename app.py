@@ -146,11 +146,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
         
     elif msg =='@我要找房':
-    #=======資料庫(刪除功能)===========
-        text = delete_all_data()
-        message = TextSendMessage(text=text)
-        line_bot_api.reply_message(event.reply_token, message)   
-    #=======資料庫(刪除功能)===========
     #==========房屋篩選===============
         line_bot_api.push_message(read_chat_userid(),
             FlexSendMessage(
@@ -158,6 +153,12 @@ def handle_message(event):
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
             )) 
     #==========房屋篩選===============
+    #=======資料庫(刪除功能)===========
+        text = delete_all_data()
+        message = TextSendMessage(text=text)
+        line_bot_api.reply_message(event.reply_token, message)   
+    #=======資料庫(刪除功能)===========
+    
     
     elif msg =='是':
         line_bot_api.reply_message(event.reply_token,
