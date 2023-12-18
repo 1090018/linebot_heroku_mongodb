@@ -70,7 +70,6 @@ def read_chat_userid():
         if dicMemberCheck('events', record):
             if dicMemberCheck('source', record['events'][0]):
                 if dicMemberCheck('userId', record['events'][0]['source']):
-                    print(record['events'][0]['source']['userId'])
                     data_list.append(record['events'][0]['source']['userId'])
         else:
             print('非LINE訊息',data)
