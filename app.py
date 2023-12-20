@@ -102,7 +102,7 @@ def handle_message(event):
         message = buttons_message_contract1()
         line_bot_api.reply_message(event.reply_token, message)
         
-    elif msg =='合約':#(房東)
+    elif msg =='合約'or msg =='結束上傳':#(房東)
         message = buttons_message_contract2()
         line_bot_api.reply_message(event.reply_token, message)
 
