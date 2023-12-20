@@ -51,6 +51,20 @@ def handle_message(event):
     if msg =='法律諮詢':
         message = buttons_message_law()
         line_bot_api.reply_message(event.reply_token, message)
+        
+    elif msg =='已儲存房客資料':
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '房客功能介紹',
+                contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
+            )) 
+        
+    elif msg =='已儲存房東資料':
+        line_bot_api.reply_message(event.reply_token,
+            FlexSendMessage(
+                alt_text = '房東功能介紹',
+                contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
+            )) 
 
     elif msg =='修繕服務':
         line_bot_api.reply_message(event.reply_token,
