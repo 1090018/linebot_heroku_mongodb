@@ -35,8 +35,8 @@ def buttons_message_contract1():#房客合約
                     text="查看合約"
                 ),
                 MessageTemplateAction(
-                    label="確認合約",
-                    text="確認合約"
+                    label="回報給房東",
+                    text="回報給房東"
                 )
             ]
         )
