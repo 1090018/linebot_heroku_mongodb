@@ -1,5 +1,6 @@
 {
   "type": "bubble",
+  "size": "deca",
   "body": {
     "type": "box",
     "layout": "vertical",
