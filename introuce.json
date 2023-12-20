@@ -46,7 +46,7 @@
         "action": {
           "type": "uri",
           "label": "觀看介紹影片",
-          "uri": "https://linecorp.com"
+          "uri": "https://storage.cloud.google.com/pig_house/%E6%88%BF%E5%AE%A2%E4%BB%8B%E9%9D%A2%E5%B0%8E%E8%A6%BD.mp4"
         },
         "color": "#F3B7C6",
         "margin": "none",
