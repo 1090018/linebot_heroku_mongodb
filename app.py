@@ -63,7 +63,7 @@ def handle_message(event):
         line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
             FlexSendMessage(
                 alt_text = '房東功能介紹',
-                contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
+                contents = json.load(open('renter.json', 'r', encoding='utf-8'))  
             )) 
 
     elif msg =='修繕服務':
