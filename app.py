@@ -53,14 +53,14 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
         
     elif msg =='已儲存房客資料':
-        line_bot_api.reply_message(event.reply_token,
+        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
             FlexSendMessage(
                 alt_text = '房客功能介紹',
                 contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
             )) 
         
     elif msg =='已儲存房東資料':
-        line_bot_api.reply_message(event.reply_token,
+        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
             FlexSendMessage(
                 alt_text = '房東功能介紹',
                 contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
