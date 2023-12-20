@@ -1,6 +1,6 @@
 {
   "type": "bubble",
-  "size": "deca",
+  "size": "hecto",
   "body": {
     "type": "box",
     "layout": "vertical",
