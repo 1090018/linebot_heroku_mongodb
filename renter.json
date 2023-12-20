@@ -1,0 +1,58 @@
+{
+  "type": "bubble",
+  "size": "hecto",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "介面功能導覽",
+        "weight": "bold",
+        "size": "md",
+        "align": "center",
+        "wrap": true,
+        "contents": []
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "none",
+        "contents": [
+          {
+            "type": "text",
+            "text": "了解我們提供的服務",
+            "weight": "regular",
+            "size": "xs",
+            "flex": 0,
+            "align": "center",
+            "gravity": "center",
+            "margin": "md",
+            "wrap": true,
+            "contents": []
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "觀看介紹影片",
+          "uri": "https://storage.cloud.google.com/pig_house/%E6%88%BF%E6%9D%B1%E4%BB%8B%E9%9D%A2%E5%B0%8E%E8%A6%BD.mp4"
+        },
+        "color": "#F3B7C6",
+        "margin": "none",
+        "height": "sm",
+        "style": "primary"
+      }
+    ]
+  }
+}
