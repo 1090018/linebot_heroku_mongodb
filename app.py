@@ -115,7 +115,7 @@ def handle_message(event):
     #============確認功能==============
         message2 = Confirm_Template()
         #userid = userid()
-        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d', message2)  
+        line_bot_api.push_message('Uf5bb8a29bf45738867326f69f6b6bf8d', message2)  
     #============確認功能============== 
     
     elif msg =='簽約流程一覽':
@@ -154,7 +154,7 @@ def handle_message(event):
     #=======資料庫(刪除功能)===========
     #==========房屋篩選===============
         #userid = userid()
-        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d',
+        line_bot_api.push_message('Uf5bb8a29bf45738867326f69f6b6bf8d',
             FlexSendMessage(
                 alt_text = '房屋條件篩選',
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
