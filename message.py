@@ -104,12 +104,12 @@ def Confirm_Template_contract():
             text="合約內容有無疑問？",
             actions=[
                 MessageTemplateAction(
-                    label="有",
-                    text="有疑問",
+                    label="有疑問",
+                    text="聯繫房東",
                 ),
                 MessageTemplateAction(
-                    label="無",
-                    text="無疑問"
+                    label="回報"無"疑問",
+                    text="為您轉達"無疑問"給房東"
                 )
             ]
         )
