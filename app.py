@@ -52,14 +52,14 @@ def handle_message(event):
         message = buttons_message_law()
         line_bot_api.reply_message(event.reply_token, message)
         
-    elif msg =='已儲存房客資料':
+    elif msg =='@完成':
         line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
             FlexSendMessage(
                 alt_text = '房客功能介紹',
                 contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
             )) 
         
-    elif msg =='已儲存房東資料':
+    elif msg =='@已完成':
         line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
             FlexSendMessage(
                 alt_text = '房東功能介紹',
