@@ -109,7 +109,7 @@ def Confirm_Template_contract():
                 ),
                 MessageTemplateAction(
                     label="回報無疑問",
-                    text="為您轉達『無疑問』給房東"
+                    text="為您轉達『無疑問』給房東✌"
                 )
             ]
         )
