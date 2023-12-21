@@ -147,7 +147,7 @@ def Carousel_Template1():
                        ),
                         URITemplateAction(
                             label='應約定及不得約定事項',
-                            uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E6%87%89%E8%A8%98%E8%BC%89%E5%8F%8A%E4%B8%8D%E5%BE%97%E8%A8%98%E8%BC%89%E4%BA%8B%E9%A0%85.pdf'
+                            uri='https://drive.google.com/file/d/1V9uML92mBLAnwIzIE-8qYI2pQjrj2ejp/view?usp=sharing'
                         ),
                     ]
                 ),
