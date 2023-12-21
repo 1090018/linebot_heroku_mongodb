@@ -46,7 +46,7 @@
         "action": {
           "type": "uri",
           "label": "觀看介紹影片",
-          "uri": "https://storage.cloud.google.com/pig_house/%E6%88%BF%E6%9D%B1%E4%BB%8B%E9%9D%A2%E5%B0%8E%E8%A6%BD.mp4"
+          "uri": "https://drive.google.com/file/d/17Xv-qYIeJpqts-ym2bwiOSjRYmD03zvd/view?usp=drive_link"
         },
         "color": "#F3B7C6",
         "margin": "none",
