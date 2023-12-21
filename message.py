@@ -53,7 +53,7 @@ def buttons_message_contract2():#房東合約
             actions=[
                 URITemplateAction(
                     label='契約範本',
-                    uri='https://storage.cloud.google.com/pig_house/%E5%90%88%E7%B4%84/%E4%BD%8F%E5%AE%85%E7%A7%9F%E8%B3%83%E5%AE%9A%E5%9E%8B%E5%8C%96%E5%A5%91%E7%B4%84%E7%AF%84%E6%9C%AC%20(1).pdf'
+                    uri='https://drive.google.com/file/d/1h_gVgp1IuKMCGsCFMlBPdJ2hXBNSxXIW/view?usp=sharing'
                 ),
                 MessageTemplateAction(
                     label="上傳合約",
