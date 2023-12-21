@@ -53,14 +53,14 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
         
     elif msg =='@完成':
-        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
+        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d',
             FlexSendMessage(
                 alt_text = '房客功能介紹',
                 contents = json.load(open('introuce.json', 'r', encoding='utf-8'))  
             )) 
         
     elif msg =='@已完成':
-        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
+        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d',
             FlexSendMessage(
                 alt_text = '房東功能介紹',
                 contents = json.load(open('renter.json', 'r', encoding='utf-8'))  
@@ -129,7 +129,7 @@ def handle_message(event):
     #============確認功能==============
         message2 = Confirm_Template()
         #userid = userid()
-        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a', message2)  
+        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d', message2)  
     #============確認功能============== 
     
     elif msg =='簽約流程一覽':
@@ -165,7 +165,7 @@ def handle_message(event):
     #=======資料庫(刪除功能)===========
     #==========房屋篩選===============
         #userid = userid()
-        line_bot_api.push_message('U07a91bc93fb0c609e7df95ec39bc630a',
+        line_bot_api.push_message('Ucc153741ec80f0246a98ecad238e614d',
             FlexSendMessage(
                 alt_text = '房屋條件篩選',
                 contents = json.load(open('select.json', 'r', encoding='utf-8'))  
